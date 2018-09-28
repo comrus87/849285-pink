@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Andrew Novikov](https://up.htmlacademy.ru/adaptive/15/user/849285).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попенко](https://htmlacademy.ru/profile/id66243).
 
 ---
 
