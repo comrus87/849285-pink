@@ -14,121 +14,120 @@
             <nav class="main-nav">
                 <div class="main-nav__wrap">
                     <button class="main-nav__button" type="button"> </button>
-                    <ul class="main-nav__site-list">
-                        <li class="site-list__item"><a href="index.html">Главная</a></li>
-                        <li class="site-list__item"><a href="photo.html">Фотография</a></li>
-                        <li class="site-list__item item-active"><a>Конкурс</a></li>
-                        <li class="site-list__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                        <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
+                        <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
+                        <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <main class="form-main">
-        <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="form-main__header">
-                <h2 class="header__title"> Конкурс на самое безбашенное путешествие с Пинк </h2>
+    <main class="page-main">
+        <form action="https://echo.htmlacademy.ru" method="post" class="block-form">
+            <div class="block-form__header">
+                <h2 class="block-form__title"> Конкурс на самое безбашенное путешествие с Пинк </h2>
             </div>
-            <p class="form-main__text"> Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
-            <fieldset class="form-main__name-fieldset">
-                <ul class="name-fieldset__name-list">
-                    <li>
-                        <label for="surname-button" class="label-item"> Фамилия: </label>
+            <p class="block-form__text"> Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+            <fieldset class="block-form__fieldset name-fieldset">
+                <ul class="name-fieldset__list">
+                    <li class="name-fieldset__item">
+                        <label for="surname-button" class="name-fieldset__label"> Фамилия: </label>
                         <input type="text" name="surname" id="surname-button" placeholder="Укажите фамилию*">
                     </li>
-                    <li>
-                        <label for="name-button" class="label-item"> Имя: </label>
+                    <li class="name-fieldset__item">
+                        <label for="name-button" class="name-fieldset__label"> Имя: </label>
                         <input type="text" name="name" id="name-button" placeholder="Введите ваше имя*">
                     </li>
-                    <li>
-                        <label for="patronymic-button" class="label-item"> Отчество: </label>
+                    <li class="name-fieldset__item">
+                        <label for="patronymic-button" class="name-fieldset__label"> Отчество: </label>
                         <input type="text" name="patronymic" id="patronymic-button" placeholder="Ну и отчество тоже*">
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="form-main__progress-fieldset">
-                <legend class="fieldset-title"> Ваши безбашенные достижения в путешествии </legend>
-                <ul class="progress-fieldset__progress-list">
-                    <li>
-                        <input type="checkbox" class="visually-hidden progress-item" name="selfi" id="filter-selfi" checked>
+            <fieldset class="block-form__fieldset progress-fieldset">
+                <legend class="progress-fieldset__title"> Ваши безбашенные достижения в путешествии </legend>
+                <ul class="progress-fieldset__list">
+                    <li class="progress-fieldset__item">
+                        <input type="checkbox" class="visually-hidden progress-fieldset__checkbox" name="selfi" id="filter-selfi" checked>
                         <label for="filter-selfi"> Сделал селфи с акулой </label>
                     </li>
-                    <li>
-                        <input type="checkbox" class="visually-hidden progress-item" name="beach" id="filter-beach" checked>
+                    <li class="progress-fieldset__item">
+                        <input type="checkbox" class="visually-hidden progress-fieldset__checkbox" name="beach" id="filter-beach" checked>
                         <label for="filter-beach"> Обгорел на пляже </label>
                     </li>
-                    <li>
-                        <input type="checkbox" class="visually-hidden progress-item" name="chuck" id="filter-chuck">
+                    <li class="progress-fieldset__item">
+                        <input type="checkbox" class="visually-hidden progress-fieldset__checkbox" name="chuck" id="filter-chuck">
                         <label for="filter-chuck"> Видел Чака Норриса </label>
                     </li>
-                    <li>
-                        <input type="checkbox" class="visually-hidden progress-item" name="souvenirs" id="filter-souvenirs">
+                    <li class="progress-fieldset__item">
+                        <input type="checkbox" class="visually-hidden progress-fieldset__checkbox" name="souvenirs" id="filter-souvenirs">
                         <label for="filter-souvenirs"> Накупил сувениров </label>
                     </li>
-                    <li>
-                        <input type="checkbox" class="visually-hidden progress-item" name="turret" id="filter-turret" checked>
+                    <li class="progress-fieldset__item">
+                        <input type="checkbox" class="visually-hidden progress-fieldset__checkbox" name="turret" id="filter-turret" checked>
                         <label for="filter-turret"> Удержал башню </label>
                     </li>
-                    <li>
-                        <input type="checkbox" class="visually-hidden progress-item" name="hotel" id="filter-hotel">
+                    <li class="progress-fieldset__item">
+                        <input type="checkbox" class="visually-hidden progress-fieldset__checkbox" name="hotel" id="filter-hotel">
                         <label for="filter-hotel"> Разгромил отель </label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="form-main__contacts-fieldset">
-                <ul class="contacts-fieldset__contacts-list">
-                    <li>
-                        <label for="number-button" class="label-item"> Номер телефона </label>
+            <fieldset class="block-form__fieldset contacts-fieldset">
+                <ul class="contacts-fieldset__list">
+                    <li class="contacts-fieldset__item">
+                        <label for="number-button" class="contacts-fieldset__label"> Номер телефона </label>
                         <input type="text" name="number" id="number-button" placeholder="Номер, пожалуйста">
                     </li>
-                    <li>
-                        <label for="email-button" class="label-item"> Адрес почты </label>
+                    <li class="contacts-fieldset__item">
+                        <label for="email-button" class="contacts-fieldset__label"> Адрес почты </label>
                         <input type="text" name="email" id="email-button" placeholder="Введите почту*">
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="form-main__application-fieldset">
-                <legend class="fieldset-title"> С каким приложением путешествовали? </legend>
-                <ul class="application-fieldset__application-list">
-                    <li>
-                        <input type="radio" class="visually-hidden application-item" name="application" value="ios" id="filter-ios" checked>
+            <fieldset class="block-form__fieldset application-fieldset">
+                <legend class="application-fieldset__title"> С каким приложением путешествовали? </legend>
+                <ul class="application-fieldset__list">
+                    <li class="application-fieldset__item">
+                        <input type="radio" class="visually-hidden application-fieldset__radio-button" name="application" value="ios" id="filter-ios" checked>
                         <label for="filter-ios"> Pink для IOS </label>
                     </li>
-                    <li>
-                        <input type="radio" class="visually-hidden application-item" name="application" value="android" id="filter-android">
+                    <li class="application-fieldset__item">
+                        <input type="radio" class="visually-hidden application-fieldset__radio-button" name="application" value="android" id="filter-android">
                         <label for="filter-android"> Pink для Android </label>
                     </li>
-                    <li>
-                        <input type="radio" class="visually-hidden application-item" name="application" value="windows" id="filter-windows">
+                    <li class="application-fieldset__item">
+                        <input type="radio" class="visually-hidden application-fieldset__radio-button" name="application" value="windows" id="filter-windows">
                         <label for="filter-windows"> Windows Phone </label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="form-main__emotions-fieldset">
-                <legend class="fieldset-title"> Опишите свои эмоции </legend>
+            <fieldset class="block-form__fieldset emotions-fieldset">
+                <legend class="emotions-fieldset__title"> Опишите свои эмоции </legend>
                 <textarea class="emotions-fieldset__text" name="textletter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
-            <button type="submit" class="form-main__submit"> Отправить форму </button>
-            <p class="form-main__annotation"> <span class="star"> * </span> - Обязательные поля </p>
+            <button type="submit" class="block-form__submit"> Отправить форму </button>
+            <p class="block-form__annotation"> <span class="block-form__star"> * </span> - Обязательные поля </p>
         </form>
     </main>
     <footer class="page-footer">
         <div class="page-footer__wrap">
             <a class="page-footer__logo"> Pink </a>
-            <ul class="page-footer__social-list">
-                <li>
-                    <a class="social-list__button" href="#"> <span class="visually-hidden">Твитер</span> </a>
+            <ul class="page-footer__list">
+                <li class="page-footer__item">
+                    <a class="page-footer__button" href="#"> <span class="visually-hidden">Твитер</span> </a>
                 </li>
-                <li>
-                    <a class="social-list__button" href="#"> <span class="visually-hidden">Фейсбук</span> </a>
+                <li class="page-footer__item">
+                    <a class="page-footer__button" href="#"> <span class="visually-hidden">Фейсбук</span> </a>
                 </li>
-                <li>
-                    <a class="social-list__button" href="#"> <span class="visually-hidden">Youtube</span> </a>
+                <li class="page-footer__item">
+                    <a class="page-footer__button" href="#"> <span class="visually-hidden">Youtube</span> </a>
                 </li>
             </ul>
-            <p class="page-footer__develop">
-                <span class="develop__text"> Разработано </span>
-                <a class="develop__academy" href="https://htmlacademy.ru/intensive/adaptive"> <span class="visually-hidden">HTML Academy</span> </a>
+            <p class="page-footer__develop"> Разработано
+                <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive"> <span class="visually-hidden">HTML Academy</span> </a>
             </p>
         </div>
     </footer>
