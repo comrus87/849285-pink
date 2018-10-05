@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<body>
+    <header class="page-header">
+        <div class="page-header__wrap">
+            <h1 class="visually-hidden"> Pink - приложение для раскрашивания будний в серый цвет.</h1>
+            <a class="page-header__logo"> Pink </a>
+            <nav class="main-nav">
+                <div class="main-nav__wrap">
+                    <button class="main-nav__button" type="button"> </button>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+                        <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
+                        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+                        <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="download">
+            <h2 class="visually-hidden"> Скачать приложение </h2>
+            <div class="download__wrap">
+                <a class="download__button"> Скачать приложение </a>
+                <ul class="download__list">
+                    <li class="download__item">
+                        <a class="download__link download__link--ios">
+                            <span class="visually-hidden"> Скачать приложение для OS </span>
+                        </a>
+                    </li>
+                    <li class="download__item">
+                        <a class="download__link download__link--android">
+                            <span class="visually-hidden"> Скачать приложение для Android </span>
+                        </a>
+                    </li>
+                    <li class="download__item">
+                        <a class="download__link download__link--windows">
+                            <span class="visually-hidden"> Скачать приложение для Windows 8 </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="download__text"> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8 </p>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__wrap">
+                <h2 class="advantages__title"> Устали от серости мегаполиса?
+                  <span class="advantages__subtitle"> Нам есть, что вам предложить! </span>
+                </h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <h3 class="advantages__title"> Поднимает настроение </h3>
+                        <p class="advantages__description"> Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов! </p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3 class="advantages__title"> Меняет мир вокруг </h3>
+                        <p class="advantages__description"> Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект </p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3 class="advantages__title"> Заводит новых друзей </h3>
+                        <p class="advantages__description"> Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="review">
+            <h2 class="visually-hidden"> Отзывы </h2>
+            <div class="review__wrap">
+                <ul class="review__list">
+                    <li class="review__item">
+                        <h3 class="review__title"> Николай Петров </h3>
+                        <p class="review__content"> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» </p>
+                    </li>
+                    <li class="review__item">
+                        <h3 class="review__title"> Николай Петров </h3>
+                        <p class="review__content"> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» </p>
+                    </li>
+                    <li class="review__item">
+                        <h3 class="review__title"> Николай Петров </h3>
+                        <p class="review__content"> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="tariff">
+            <h2 class="visually-hidden"> Тарифы </h2>
+            <div class="tariff__wrap">
+                <table class="tariff__list">
+                    <tr class="tariff__list-header">
+                        <th> <span class="tariff__name"> Стандарт </span>
+                            <span class="tariff__cost"> 3,99 USD </span>
+                        </th>
+                    </tr>
+                    <tr class="tariff__list-row">
+                        <td> <span class="tariff__option tariff__option--checked"> Розовый фильтр </span> </td>
+                    </tr>
+                    <tr class="tariff__list-row">
+                        <td> <span class="tariff__option tariff__option--checked"> Смайлики </span> </td>
+                    </tr>
+                    <tr class="tariff__list-row">
+                        <td> <span class="tariff__option tariff__option--cancel"> Комментарии </span> </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="contacts__wrap">
+                <h2 class="contacts__title"> Остались вопросы?
+                  <span class="contacts__subtitle">Свяжитесь с нами!</span>
+                </h2>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <h3 class="contacts__text"> Звоните </h3>
+                        <a class="contacts__phone"> +7 (812) 555-66-66 </a>
+                    </li>
+                    <li class="contacts__item">
+                        <h3 class="contacts__text"> Пишите </h3>
+                        <a class="contacts__mail"> mail@htmlacademy.ru </a>
+                    </li>
+                    <li class="contacts__item">
+                        <h3 class="contacts__text"> Приезжайте в гости </h3>
+                        <a class="contacts__adress"> ул. Большая Конюшенная, 19/8 </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts__google-map"> <img src="#" width="320" height="200" alt="Интерактивная карта"></div>
+        </section>
+    </main>
+</body>
 
-  </body>
 </html>
