@@ -4,13 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="page-header">
         <div class="page-header__wrap">
             <h1 class="visually-hidden"> Pink - приложение для раскрашивания будний в серый цвет.</h1>
-            <a class="page-header__logo"> Pink </a>
+            <a class="page-header__logo"> <img src="img/logo-pink-white-mobile.svg" alt="Логотип"> </a>
             <nav class="main-nav">
                 <div class="main-nav__wrap">
                     <button class="main-nav__button" type="button"> </button>
@@ -31,7 +34,7 @@
             </div>
             <p class="block-form__text"> Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
             <fieldset class="block-form__name">
-                <ul class="block-form__name-list">
+                <ul class="block-form__list">
                     <li class="block-form__name-item">
                         <label class="block-form__name-label"> Фамилия:
                             <input type="text" name="surname" placeholder="Укажите фамилию*">
@@ -50,42 +53,42 @@
                 </ul>
             </fieldset>
             <fieldset class="block-form__progress">
-                <legend class="block-form__progress-title"> Ваши безбашенные достижения в путешествии </legend>
-                <ul class="block-form__progress-list">
+                <p class="block-form__progress-title"> Ваши безбашенные достижения в путешествии </p>
+                <ul class="block-form__list">
                     <li class="block-form__progress-item">
-                        <label> Сделал селфи с акулой
+                        <label class="block-form__progress-label"> Сделал селфи с акулой
                             <input type="checkbox" class="visually-hidden block-form__progress-checkbox" name="selfi" checked>
                         </label>
                     </li>
                     <li class="block-form__progress-item">
-                        <label> Обгорел на пляже
+                        <label class="block-form__progress-label"> Обгорел на пляже
                             <input type="checkbox" class="visually-hidden block-form__progress-checkbox" name="beach" checked>
                         </label>
                     </li>
                     <li class="block-form__progress-item">
-                        <label> Видел Чака Норриса
+                        <label class="block-form__progress-label"> Видел Чака Норриса
                             <input type="checkbox" class="visually-hidden block-form__progress-checkbox" name="chuck">
                         </label>
                     </li>
                     <li class="block-form__progress-item">
-                        <label> Накупил сувениров
+                        <label class="block-form__progress-label"> Накупил сувениров
                             <input type="checkbox" class="visually-hidden block-form__progress-checkbox" name="souvenirs">
                         </label>
                     </li>
                     <li class="block-form__progress-item">
-                        <label> Удержал башню
+                        <label class="block-form__progress-label"> Удержал башню
                             <input type="checkbox" class="visually-hidden block-form__progress-checkbox" name="turret" checked>
                         </label>
                     </li>
                     <li class="block-form__progress-item">
-                        <label> Разгромил отель
+                        <label class="block-form__progress-label"> Разгромил отель
                             <input type="checkbox" class="visually-hidden block-form__progress-checkbox" name="hotel">
                         </label>
                     </li>
                 </ul>
             </fieldset>
             <fieldset class="block-form__contacts">
-                <ul class="block-form__contacts-list">
+                <ul class="block-form__list">
                     <li class="block-form__contacts-item">
                         <label class="block-form__contacts-label"> Номер телефона
                             <input type="text" name="number" placeholder="Номер, пожалуйста">
@@ -99,27 +102,27 @@
                 </ul>
             </fieldset>
             <fieldset class="block-form__application">
-                <legend class="block-form__application-title"> С каким приложением путешествовали? </legend>
-                <ul class="block-form__application-list">
+                <p class="block-form__application-title"> С каким приложением путешествовали? </p>
+                <ul class="block-form__list">
                     <li class="block-form__application-item">
-                        <label> Pink для IOS
+                        <label class="block-form__application-label"> Pink для IOS
                             <input type="radio" class="visually-hidden block-form__application-radio" name="application" value="ios" checked>
                         </label>
                     </li>
                     <li class="block-form__application-item">
-                        <label> Pink для Android
+                        <label class="block-form__application-label"> Pink для Android
                             <input type="radio" class="visually-hidden block-form__application-radio" name="application" value="android">
                         </label>
                     </li>
                     <li class="block-form__application-item">
-                        <label> Windows Phone
+                        <label class="block-form__application-label"> Windows Phone
                             <input type="radio" class="visually-hidden block-form__application-radio" name="application" value="windows">
                         </label>
                     </li>
                 </ul>
             </fieldset>
             <fieldset class="block-form__emotions">
-                <legend class="block-form__emotions-title"> Опишите свои эмоции </legend>
+                <p class="block-form__emotions-title"> Опишите свои эмоции </p>
                 <textarea class="block-form__emotions-text" name="textletter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <button type="submit" class="block-form__submit"> Отправить форму </button>
@@ -128,20 +131,21 @@
     </main>
     <footer class="page-footer">
         <div class="page-footer__wrap">
-            <a class="page-footer__logo"> Pink </a>
+            <a class="page-footer__logo"> <img src="img/logo-pink-blue-mobile.svg" alt="Логотип"> </a>
             <ul class="social">
                 <li class="social__item">
-                    <a class="social__link social__link--twitter" href="#"> <span class="visually-hidden">Твитер</span> </a>
+                    <a class="social__link social__link--twitter" href="#"> <img src="img/icon-twitter.svg" alt="Логотип Twitter"> <span class="visually-hidden">Твитер</span> </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#"> <span class="visually-hidden">Фейсбук</span> </a>
+                    <a class="social__link social__link--facebook" href="#"> <img src="img/icon-facebook.svg" alt="Логотип Facebook"> <span class="visually-hidden">Фейсбук</span> </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--youtube" href="#"> <span class="visually-hidden">Youtube</span> </a>
+                    <a class="social__link social__link--youtube" href="#"> <img src="img/icon-youtube.svg" alt="Логотип Youtube"> <span class="visually-hidden">Youtube</span> </a>
                 </li>
             </ul>
             <p class="page-footer__develop"> Разработано
-                <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive"> <span class="visually-hidden">HTML Academy</span> </a>
+                <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+                    <span class="visually-hidden">HTML Academy</span> </a>
             </p>
         </div>
     </footer>
