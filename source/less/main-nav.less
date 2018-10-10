@@ -1,0 +1,85 @@
+.main-nav__list {
+  .list-default();
+}
+
+.main-nav--closed {
+ min-height: 394px;
+ position: relative;
+}
+
+.main-nav--open {
+ display: flex;
+ flex-direction: column;
+  position: relative;
+  min-height: 652px;
+  background-image: url("../img/bkg-mobile-header.jpg");
+ background-repeat: no-repeat;
+ background-position: bottom;
+}
+
+.main-nav__item {
+  text-align: center;
+  background-color: @darkblue;
+}
+
+ .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+
+.main-nav__item a {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+   line-height: 32px;
+   font-weight: 700;
+   text-transform: uppercase;
+   border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+  padding: 15px 0;
+}
+
+
+.main-nav__button {
+  position: absolute;
+  top: -48px;
+  right: 20px;
+  width: 50px;
+  height: 26px;
+  background-color: @darkblue;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--open .main-nav__button {
+  &::before,
+  &::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 5px;
+  background-color: #ffffff;
+  }
+
+  &::before {
+  transform: rotate(45deg);
+  }
+  &::after {
+  transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__button {
+  &::before {
+   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+   }
+}

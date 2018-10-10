@@ -4,13 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="page-header page-header--photo">
         <div class="page-header__wrap">
             <h1 class="visually-hidden"> Pink - приложение для раскрашивания будний в серый цвет.</h1>
-            <a class="page-header__logo"> Pink </a>
+            <a class="page-header__logo"> <img src="img/logo-pink-white-mobile.svg" alt="Логотип"> </a>
             <nav class="main-nav">
                 <div class="main-nav__wrap">
                     <button class="main-nav__button" type="button"> </button>
@@ -22,17 +25,17 @@
                     </ul>
                 </div>
             </nav>
+            <div class="page-header__intro">
+                <h2 class="page-header__title"> Фотографии пользователей </h2>
+            </div>
         </div>
     </header>
     <main class="page-main">
         <section class="gallery">
             <div class="gallery__top-wrap">
-                <div class="gallery__header">
-                    <h2 class="gallery__title"> Фотографии пользователей </h2>
-                </div>
                 <p class="gallery__text"> Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших? </p>
                 <div class="gallery__panorama">
-                    <img src="http://placehold.it/320x1137" width="320" height="137" alt="Панорама">
+                    <img src="img/panorama-mobile@1x.jpg" alt="Панорама">
                     <span class="gallery__panorama-flag"> Панорама дня </span>
                 </div>
             </div>
@@ -48,7 +51,7 @@
                 <ul class="gallery__list">
                     <li class="gallety__item">
                         <a class="gallery__link-item" href="#">
-                            <img src="http://placehold.it/280x180" width="320" height="137" alt="Фото Левон"></a>
+                            <img src="img/photo-car-mobile@1x.jpg" alt="Фото Левон"></a>
                         <h3 class="gallery__comment-name"> Левон <span class="gallery__comment-time"> (5 часов назад) </span> </h3>
                         <p class="gallery__comment-content"> Вчера он на луну летал, сегодня в руки к нам попал. </p>
                         <div class="gallery__comment-like">
@@ -58,7 +61,7 @@
                     </li>
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
-                            <img src="http://placehold.it/280x180" width="320" height="137" alt="Фото Антон"></a>
+                            <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото Антон"></a>
                         <h3 class="gallery__comment-name"> Антон <span class="gallery__comment-time"> (12 часов назад) </span> </h3>
                         <p class="gallery__comment-content"> Соседи будут рады! </p>
                         <div class="gallery__comment-like">
@@ -68,7 +71,7 @@
                     </li>
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
-                            <img src="http://placehold.it/280x180" width="320" height="137" alt="Фото Борис"></a>
+                            <img src="img/photo-window-mobile@1x.jpg" alt="Фото Борис"></a>
                         <h3 class="gallery__comment-name"> Борис <span class="gallery__comment-time"> (20 часов назад) </span> </h3>
                         <p class="gallery__comment-content"> Здесь могла быть ваша цитата о высоком и вечном. </p>
                         <div class="gallery__comment-like">
@@ -78,7 +81,7 @@
                     </li>
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
-                            <img src="http://placehold.it/280x180" width="320" height="137" alt="Фото Сергей"></a>
+                            <img src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергей"></a>
                         <h3 class="gallery__comment-name"> Сергей <span class="gallery__comment-time"> (25 часов назад) </span> </h3>
                         <p class="gallery__comment-content"> Самая кубанская в мире! </p>
                         <div class="gallery__comment-like">
@@ -88,7 +91,7 @@
                     </li>
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
-                            <img src="http://placehold.it/280x180" width="320" height="137" alt="Фото Максим"></a>
+                            <img src="img/photo-pov-mobile@1x.jpg" alt="Фото Максим"></a>
                         <h3 class="gallery__comment-name"> Максим <span class="gallery__comment-time"> (40 часов назад) </span> </h3>
                         <p class="gallery__comment-content"> Где снег-то? </p>
                         <div class="gallery__comment-like">
@@ -98,7 +101,7 @@
                     </li>
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
-                            <img src="http://placehold.it/280x180" width="320" height="137" alt="Фото Надежда"></a>
+                            <img src="img/photo-wing-mobile@1x.jpg" alt="Фото Надежда"></a>
                         <h3 class="gallery__comment-name"> Надежда <span class="gallery__comment-time">(45 часов назад)</span> </h3>
                         <p class="gallery__comment-content"> Всем GM и взаимные лайки! </p>
                         <div class="gallery__comment-like">
@@ -113,22 +116,25 @@
             <h2 class="edit__title"> Затмите их всех! Выкладывайте все, что накопилось в телефоне! </h2>
             <div class="edit__content">
                 <form action="https://echo.htmlacademy.ru" class="send-form" method="post">
-                    <picture class="edit__picture"> <img src="http://placehold.it/280x375" width="280" height="375" alt="Загружаемое фото"></picture>
+                    <picture class="edit__picture"> <img src="img/photo-road-mobile@1x.jpg" alt="Загружаемое фото"></picture>
                     <div class="edit__filters">
-                        <input type="radio" id="edit-filter-1" name="edit-filter" checked>
-                        <label class="edit__filter-toggle" for="edit-filter-1"></label>
-                        <input type="radio" id="edit-filter-2" name="edit-filter">
-                        <label class="edit__filter-toggle" for="edit-filter-2"></label>
-                        <input type="radio" id="edit-filter-3" name="edit-filter">
-                        <label class="edit__filter-toggle" for="edit-filter-3"></label>
+                        <label class="edit__filter-toggle">
+                            <input type="radio" name="edit-filter" checked>
+                        </label>
+                        <label class="edit__filter-toggle">
+                            <input type="radio" name="edit-filter">
+                        </label>
+                        <label class="edit__filter-toggle">
+                            <input type="radio" name="edit-filter">
+                        </label>
                     </div>
                     <div class="edit__range">
                         <input class="edit__range-filter" type="range" id="range-filter" name="range-filter">
                     </div>
                     <hr class="edit__line">
                     <div class="edit__buttons">
-                        <input class="edit__buuton-submit" id="submit-btn" type="submit" value="Запостить">
-                        <input class="edit__buuton-reset" id="reset-btn" type="reset" value="Отмена">
+                        <input class="edit__buuton-submit button" id="submit-btn" type="submit" value="Запостить">
+                        <input class="edit__buuton-reset button" id="reset-btn" type="reset" value="Отмена">
                     </div>
                 </form>
             </div>
@@ -136,20 +142,21 @@
     </main>
     <footer class="page-footer">
         <div class="page-footer__wrap">
-            <a class="page-footer__logo"> Pink </a>
+            <a class="page-footer__logo"> <img src="img/logo-pink-blue-mobile.svg" alt="Логотип"> </a>
             <ul class="social">
                 <li class="social__item">
-                    <a class="social__link social__link--twitter" href="#"> <span class="visually-hidden">Твитер</span> </a>
+                    <a class="social__link social__link--twitter" href="#"> <img src="img/icon-twitter.svg" alt="Логотип Twitter"> <span class="visually-hidden">Твитер</span> </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#"> <span class="visually-hidden">Фейсбук</span> </a>
+                    <a class="social__link social__link--facebook" href="#"> <img src="img/icon-facebook.svg" alt="Логотип Facebook"> <span class="visually-hidden">Фейсбук</span> </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--youtube" href="#"> <span class="visually-hidden">Youtube</span> </a>
+                    <a class="social__link social__link--youtube" href="#"> <img src="img/icon-youtube.svg" alt="Логотип Youtube"> <span class="visually-hidden">Youtube</span> </a>
                 </li>
             </ul>
             <p class="page-footer__develop"> Разработано
-                <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive"> <span class="visually-hidden">HTML Academy</span> </a>
+                <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+                    <span class="visually-hidden">HTML Academy</span> </a>
             </p>
         </div>
     </footer>
