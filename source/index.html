@@ -10,13 +10,15 @@
 </head>
 
 <body>
-    <header class="page-header header-index">
+    <header class="page-header page-header--index">
         <div class="page-header__wrap">
-            <h1 class="visually-hidden"> Pink - приложение для раскрашивания будний в серый цвет.</h1>
-            <a class="page-header__logo"> <img src="img/logo-pink-white-mobile.svg" alt="Логотип"> </a>
-            <nav class="main-nav">
+            <div class="page-header__menu">
+              <h1 class="visually-hidden"> Pink - приложение для раскрашивания будний в серый цвет.</h1>
+              <a class="page-header__logo"> <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Логотип"> </a>
+            </div>
+            <nav class="main-nav main-nav--closed">
+                <button class="main-nav__button" type="button"> </button>
                 <div class="main-nav__wrap">
-                    <button class="main-nav__button" type="button"> </button>
                     <ul class="main-nav__list">
                         <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
                         <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
