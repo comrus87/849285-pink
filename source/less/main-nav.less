@@ -1,20 +1,39 @@
+
+
 .main-nav__list {
   .list-default();
 }
 
+.main-nav__logo {
+  display: block;
+  height: 24px;
+  width: 75px;
+}
+
+.main-nav__menu {
+  background-color: @darkblue;
+  padding: 20px;
+  border-bottom: 1px solid #000000;
+}
+
+.main-nav--closed .main-nav__menu {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 .main-nav--closed {
- min-height: 394px;
- position: relative;
+ min-height: 462px;
+  position: relative;
 }
 
 .main-nav--open {
  display: flex;
  flex-direction: column;
-  position: relative;
   min-height: 652px;
   background-image: url("../img/bkg-mobile-header.jpg");
  background-repeat: no-repeat;
  background-position: bottom;
+  position: relative;
 }
 
 .main-nav__item {
@@ -42,7 +61,7 @@
 
 .main-nav__button {
   position: absolute;
-  top: -48px;
+  top: 20px;
   right: 20px;
   width: 50px;
   height: 26px;
@@ -83,3 +102,4 @@
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
    }
 }
+

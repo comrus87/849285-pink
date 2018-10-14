@@ -12,20 +12,18 @@
 <body>
     <header class="page-header page-header--index">
         <div class="page-header__wrap">
-            <div class="page-header__menu">
               <h1 class="visually-hidden"> Pink - приложение для раскрашивания будний в серый цвет.</h1>
-              <a class="page-header__logo"> <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Логотип"> </a>
-            </div>
-            <nav class="main-nav main-nav--closed">
+            <nav class="main-nav main-nav--open">
+              <div class="main-nav__menu">
+                <a class="main-nav__logo"> <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Логотип"> </a>
+              </div>
                 <button class="main-nav__button" type="button"> </button>
-                <div class="main-nav__wrap">
                     <ul class="main-nav__list">
                         <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
                         <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
                         <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
                         <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
                     </ul>
-                </div>
             </nav>
         </div>
         <div class="download">
@@ -61,15 +59,15 @@
                 </h2>
                 <ul class="advantages__list">
                     <li class="advantages__item">
-                        <h3 class="advantages__header"> Поднимает настроение </h3>
+                        <h3 class="advantages__header advantages__header--mood"> Поднимает настроение </h3>
                         <p class="advantages__description"> Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов! </p>
                     </li>
                     <li class="advantages__item">
-                        <h3 class="advantages__header"> Меняет мир вокруг </h3>
+                        <h3 class="advantages__header advantages__header--world"> Меняет мир вокруг </h3>
                         <p class="advantages__description"> Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект </p>
                     </li>
                     <li class="advantages__item">
-                        <h3 class="advantages__header"> Заводит новых друзей </h3>
+                        <h3 class="advantages__header advantages__header--friends"> Заводит новых друзей </h3>
                         <p class="advantages__description"> Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых </p>
                     </li>
                 </ul>
@@ -78,17 +76,25 @@
         <section class="review">
             <h2 class="visually-hidden"> Отзывы </h2>
             <div class="review__wrap">
+                  <input class="visually-hidden review__button--1" id="review-btn-1" type="radio" name="review-switch" checked>
+                  <input class="visually-hidden review__button--2" id="review-btn-2" type="radio" name="review-switch">
+                  <input class="visually-hidden review__button--3" id="review-btn-3" type="radio" name="review-switch">
+                <div class="review__controls">
+                   <label for="review-btn-1" class="review__label--1"> </label>
+                   <label for="review-btn-2" class="review__label--2"></label>
+                   <label for="review-btn-3" class="review__label--3"></label>
+                </div>
                 <ul class="review__list">
-                    <li class="review__item">
+                    <li class="review__item review__item--1">
                         <h3 class="review__title"> Николай Петров </h3>
                         <p class="review__content"> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» </p>
                     </li>
-                    <li class="review__item">
-                        <h3 class="review__title"> Николай Петров </h3>
+                    <li class="review__item review__item--2">
+                        <h3 class="review__title"> Алексей Сидоров </h3>
                         <p class="review__content"> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» </p>
                     </li>
-                    <li class="review__item">
-                        <h3 class="review__title"> Николай Петров </h3>
+                    <li class="review__item review__item--3">
+                        <h3 class="review__title"> Петр Иванов </h3>
                         <p class="review__content"> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» </p>
                     </li>
                 </ul>
@@ -97,21 +103,95 @@
         <section class="tariff">
             <h2 class="visually-hidden"> Тарифы </h2>
             <div class="tariff__wrap">
+               <input class="visually-hidden tariff__button--1" type="radio" id="tariff-btn-1" name="toggled">
+               <input class="visually-hidden tariff__button--2" type="radio" id="tariff-btn-2" name="toggled" checked>
+               <input class="visually-hidden tariff__button--3" type="radio" id="tariff-btn-3" name="toggled">
+               <div class="tariff__controls">
+                 <label for="tariff-btn-1" class="tariff__label--1"></label>
+                 <label for="tariff-btn-2" class="tariff__label--2"></label>
+                 <label for="tariff-btn-3" class="tariff__label--3"></label>
+               </div>
                 <table class="tariff__list">
+                  <tbody>
                     <tr class="tariff__list-header">
-                        <th> <span class="tariff__name"> Стандарт </span>
-                            <span class="tariff__cost"> 3,99 USD </span>
+                        <th class="tariff__first-cols"> </th>
+                        <th class="tariff__item-header"> <span class="tariff__name"> База </span>
+                            <span class="tariff__cost"> 1,99 USD </span>
+                        </th>
+                        <th class="tariff__item-header"> <span class="tariff__name"> Стандарт </span>
+                            <span class="tariff__cost"> 3,99 USD </span> <div class="tariff__flag-hit"> <span> Хит </span> </div>
+                        </th>
+                        <th class="tariff__item-header"> <span class="tariff__name"> Анлим </span>
+                            <span class="tariff__cost"> 9,99 USD </span>
                         </th>
                     </tr>
                     <tr class="tariff__list-row">
-                        <td> <span class="tariff__option tariff__option--checked"> Розовый фильтр </span> </td>
+                        <td class="tariff__cols tariff__cols--hidden"> <span class="tariff__option"> Розовый фильтр </span>
+                        </td>
+                        <td class="tariff__cols">
+                          <div class="tariff__cols-wrap">
+                            <span class="tariff__option--mobile"> Розовый фильтр </span>
+                            <span class="tariff__icon--ok"> </span>
+                          </div>
+                        </td>
+                        <td class="tariff__cols">
+                          <div class="tariff__cols-wrap">
+                          <span class="tariff__option--mobile"> Розовый фильтр </span>
+                          <span class="tariff__icon--ok"> </span>
+                        </div>
+                        </td>
+                        <td class="tariff__cols">
+                          <div class="tariff__cols-wrap">
+                            <span class="tariff__option--mobile"> Розовый фильтр </span>
+                            <span class="tariff__icon--ok"> </span>
+                          </div>
+                        </td>
                     </tr>
                     <tr class="tariff__list-row">
-                        <td> <span class="tariff__option tariff__option--checked"> Смайлики </span> </td>
+                        <td class="tariff__cols tariff__cols--hidden"> <span class="tariff__option"> Смайлики </span>
+                         </td>
+                        <td class="tariff__cols">
+                           <div class="tariff__cols-wrap">
+                              <span class="tariff__option--mobile"> Смайлики </span>
+                              <span class="tariff__icon--cancel"> </span>
+                            </div>
+                         </td>
+                         <td class="tariff__cols">
+                           <div class="tariff__cols-wrap">
+                              <span class="tariff__option--mobile"> Смайлики </span>
+                              <span class="tariff__icon--ok"> </span>
+                            </div>
+                         </td>
+                         <td class="tariff__cols">
+                           <div class="tariff__cols-wrap">
+                             <span class="tariff__option--mobile"> Смайлики </span>
+                              <span class="tariff__icon--ok"> </span>
+                            </div>
+                         </td>
                     </tr>
                     <tr class="tariff__list-row">
-                        <td> <span class="tariff__option tariff__option--cancel"> Комментарии </span> </td>
+                         <td class="tariff__cols tariff__cols--hidden"> <span class="tariff__option"> Комментарии </span>
+                         </td>
+                        <td class="tariff__cols">
+                          <div class="tariff__cols-wrap">
+                             <span class="tariff__option--mobile"> Комментарии  </span>
+                             <span class="tariff__icon--cancel"> </span>
+                           </div>
+                         </td>
+                         <td class="tariff__cols">
+                           <div class="tariff__cols-wrap">
+                              <span class="tariff__option--mobile"> Комментарии  </span>
+                              <span class="tariff__icon--cancel"> </span>
+                            </div>
+                         </td>
+                         <td class="tariff__cols">
+                           <div class="tariff__cols-wrap">
+                            <span class="tariff__option--mobile"> Комментарии  </span>
+                            <span class="tariff__icon--ok"> </span>
+                          </div>
+                         </td>
                     </tr>
+                  </tbody>
                 </table>
             </div>
         </section>
@@ -133,7 +213,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="contacts__google-map"> <img src="#" width="320" height="200" alt="Интерактивная карта"></div>
+            <div class="contacts__google-map">
+              <div class="contacts__decoration"></div>
+           </div>
         </section>
     </main>
 </body>

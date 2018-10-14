@@ -1,8 +1,10 @@
 .review {
   width: 320px;
   margin: 0 auto;
-  padding: 43px 20px 0 20px;
+  padding: 45px 20px 88px;
+   position: relative;
 }
+
 
 .review__list {
   .list-default();
@@ -13,6 +15,7 @@
   font-size: 18px;
    line-height: 30px;
    font-weight: 700;
+   text-align: center;
 }
 
 .review__content {
@@ -20,4 +23,52 @@
   font-size: 14px;
    line-height: 30px;
    font-weight: 400;
+   text-align: center;
 }
+
+.review__controls label {
+display: block;
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background: #bec2c7;
+position: relative;
+cursor: pointer;
+}
+
+.review__controls {
+  position: absolute;
+  width: 62px;
+  height: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 129px;
+  bottom: 42px;
+}
+
+
+.review__item {
+  display: none;
+}
+
+.review__button--1:checked ~ .review__list .review__item--1 {
+  display: block;
+}
+
+.review__button--2:checked ~ .review__list .review__item--2 {
+  display: block;
+}
+
+.review__button--3:checked ~ .review__list .review__item--3 {
+  display: block;
+}
+
+.review__button--1:checked ~ .review__controls .review__label--1,
+.review__button--2:checked ~ .review__controls .review__label--2,
+.review__button--3:checked ~ .review__controls .review__label--3 {
+    border: 3px solid #000000;
+   box-sizing: content-box;
+   background: #ffffff;
+}
+
