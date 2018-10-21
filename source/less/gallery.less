@@ -5,17 +5,43 @@
 }
 
 .gallery__text {
+  width: 244px;
+  margin: 45px 38px 47px;
+  padding: 0;
 color: @darkblue;
   font-size: 14px;
    line-height: 30px;
    font-weight: 400;
+   text-align: center;
+
 }
 
 .gallery__bottom-wrap {
  padding: 0 20px;
 }
 
+.gallery__link-panorama {
+  display: block;
+  position: relative;
+}
+
+.gallery__panorama {
+  display: block;
+  line-height: 0;
+}
+
+.gallery__panorama img {
+  width: 100%;
+}
+
 .gallery__panorama-flag {
+  display: block;
+  position: absolute;
+  width: 140px;
+  padding: 6px 0;
+  top: 0;
+  right: 20px;
+  text-align: center;
   background: @red;
   color: #ffffff;
   font-size: 12px;
@@ -25,6 +51,16 @@ color: @darkblue;
 
 .gallery__list {
   .list-default();
+}
+
+.gallery__comment-name {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery__link-item {
+  display: block;
+  line-height: 0;
 }
 
 .gallery__comment-name {
@@ -39,14 +75,18 @@ color: @darkblue;
 }
 
 .gallery__comment-content {
+  padding: 0 0 10px 0;
+  margin: 0;
    color: @darkblue;
   font-size: 14px;
    line-height: 24px;
    font-weight: 400;
 }
 
-.gallery__list {
-  background: #f2f2f2;
+.gallery__comment,
+.gallery__wrap-comment {
+  background: @gray;
+  padding: 20px 0 20px 17px;
 }
 
 .gallery__comment-like-me {
@@ -55,4 +95,8 @@ color: @darkblue;
    line-height: 24px;
    font-weight: 400;
    text-transform: uppercase;
+}
+
+.gallery__item {
+  margin-top: 20px;
 }

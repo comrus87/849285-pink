@@ -9,11 +9,18 @@ padding: 0;
   font-size: 14px;
    line-height: 30px;
    font-weight: 400;
+   padding: 0;
+   margin: 40px auto;
+   width: 256px;
+   text-align: center;
 }
 
 .edit__content {
   background: @gray;
-  padding: 0 20px;
+}
+
+.edit__wrap {
+  padding: 20px 20px 34px 20px;
 }
 
 .button {
@@ -38,4 +45,85 @@ padding: 0;
 .edit__buuton-reset {
  color: rgba(40, 54, 69, 0.1);
  border: 3px solid rgba(40, 54, 69, 0.1);
+}
+
+.edit__filters {
+ width: 200px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 42px auto 0;
+}
+
+.edit__filter-toggle {
+  display: block;
+  cursor: pointer;
+}
+
+.edit__filter-toggle--crop {
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/icon-editor-crop.svg");
+  opacity: 0.3;
+}
+
+
+.edit__filter-toggle--fill {
+  width: 45px;
+  height: 48px;
+  background-image: url("../img/icon-editor-fill.svg");
+  opacity: 0.3;
+}
+
+.edit__filter-toggle--contrast {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icon-editor-contrast.svg");
+  opacity: 0.3;
+}
+
+.edit__range-filter {
+  display: block;
+  width: 240px;
+  background: inherit;
+    border: none;
+    outline: none;
+   -webkit-appearance: none;
+   margin: 0 auto;
+
+}
+
+.edit__range-filter::-webkit-slider-runnable-track {
+    height: 2px;
+   background-color: @darkblue;
+}
+
+.edit__range-filter::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   width: 14px;
+    height: 14px;
+    border: 2px solid @red;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+.edit__range-filter::-webkit-slider-thumb:active {
+   background-color: @red;
+}
+
+
+.edit__range {
+  padding-bottom: 34px;
+  border-bottom: 1px solid #dddfe0;
+  margin-bottom: 38px;
+}
+
+.edit__buttons {
+  padding: 0 20px 40px 20px;
+}
+
+.edit__buuton-submit {
+  margin-bottom: 12px;
 }

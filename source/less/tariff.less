@@ -1,7 +1,6 @@
 .tariff {
   background: @gray;
-  width: 320px;
-  margin: 0 auto;
+ .wrap-mobile;
    background-image: url("../img/bg-triangle-white.svg");
    background-repeat: no-repeat;
    background-size: 120%;
@@ -10,11 +9,16 @@
     overflow: hidden;
 }
 
+.tariff__wrap {
+  padding: 0 20px;
+  overflow-x: hidden;
+}
 
 .tariff__list {
  border-collapse: collapse;
  margin: 0;
  padding: 0;
+ width: 300%;
 }
 
 .tariff__cols {
@@ -144,17 +148,17 @@ cursor: pointer;
 }
 
 .tariff__button--1:checked ~ .tariff__list {
-  transform: translateX(280px);
-    transition: .5s;
-}
-
-.tariff__button--2:checked ~ .tariff__list {
   transform: translateX(0);
     transition: .5s;
 }
 
-.tariff__button--3:checked ~ .tariff__list {
+.tariff__button--2:checked ~ .tariff__list {
   transform: translateX(-280px);
+    transition: .5s;
+}
+
+.tariff__button--3:checked ~ .tariff__list {
+  transform: translateX(-560px);
     transition: .5s;
 }
 

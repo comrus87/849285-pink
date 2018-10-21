@@ -6,33 +6,33 @@
 
 .main-nav__logo {
   display: block;
-  height: 24px;
+  height: 25px;
   width: 75px;
 }
 
 .main-nav__menu {
   background-color: @darkblue;
   padding: 20px;
-  border-bottom: 1px solid #000000;
 }
 
 .main-nav--closed .main-nav__menu {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.page-header__promo {
+   background-image: url("../img/bkg-mobile-header.jpg");
+   background-repeat: no-repeat;
+    min-height: 461px;
+    margin-top: -66px;
+}
 
 .main-nav--closed {
- min-height: 462px;
   position: relative;
 }
 
 .main-nav--open {
  display: flex;
  flex-direction: column;
-  min-height: 652px;
-  background-image: url("../img/bkg-mobile-header.jpg");
- background-repeat: no-repeat;
- background-position: bottom;
   position: relative;
 }
 
@@ -70,6 +70,8 @@
   border: none;
 }
 
+
+
 .main-nav--open .main-nav__button {
   &::before,
   &::after {
@@ -88,6 +90,10 @@
   &::after {
   transform: rotate(-45deg);
   }
+}
+
+.main-nav--open .main-nav__menu {
+  border-bottom: 1px solid #000000;
 }
 
 .main-nav--closed .main-nav__button {
