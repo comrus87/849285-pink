@@ -60,28 +60,6 @@ padding: 0;
   cursor: pointer;
 }
 
-.edit__filter-toggle--crop {
-  width: 45px;
-  height: 45px;
-  background-image: url("../img/icon-editor-crop.svg");
-  opacity: 0.3;
-}
-
-
-.edit__filter-toggle--fill {
-  width: 45px;
-  height: 48px;
-  background-image: url("../img/icon-editor-fill.svg");
-  opacity: 0.3;
-}
-
-.edit__filter-toggle--contrast {
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/icon-editor-contrast.svg");
-  opacity: 0.3;
-}
-
 .edit__range-filter {
   display: block;
   width: 240px;
@@ -90,8 +68,22 @@ padding: 0;
     outline: none;
    -webkit-appearance: none;
    margin: 0 auto;
-
 }
+
+.edit__icon {
+ fill: @darkblue;
+ opacity: 0.3;
+}
+
+.edit__icon:hover {
+ opacity: 0.5;
+}
+
+.edit__icon:active {
+  fill: @red ;
+  opacity: 1;
+  }
+
 
 .edit__range-filter::-webkit-slider-runnable-track {
     height: 2px;
