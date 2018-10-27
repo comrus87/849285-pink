@@ -21,7 +21,10 @@
 .block-form fieldset {
   border: none;
   margin: 0;
- padding: 0;
+}
+
+.block-form__name {
+  padding: 0;
 }
 
 .block-form__name-label,
@@ -55,6 +58,32 @@
 
 .block-form__progress {
   background: @gray;
+  padding: 39px 20px 42px 20px;
+}
+
+.block-form__contacts {
+  padding: 32px 20px 0 20px;
+}
+
+.block-form__application {
+  background: @gray;
+  padding: 39px 20px 42px 20px;
+}
+
+.block-form__emotions {
+  padding: 38px 20px 48px 20px;
+}
+
+.block-form__progress-item {
+  margin-top: 52px;
+}
+
+.block-form__application-item {
+  margin-top: 45px;
+}
+
+.block-form__progress-item:first-child {
+  margin-top: 0;
 }
 
 .block-form__progress-title,
@@ -62,9 +91,27 @@
 .block-form__emotions-title {
   color: @red;
   font-size: 14px;
-   line-height: 30px;
+   line-height: 18px;
    font-weight: 400;
    text-transform: uppercase;
+   margin: 0 auto;
+   padding: 0;
+}
+
+.block-form__progress-title {
+  width: 220px;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.block-form__application-title {
+  width: 178px;
+  text-align: center;
+}
+
+.block-form__emotions-title {
+  width: 185px;
+  margin-bottom: 18px;
 }
 
 .block-form__progress-label,
@@ -73,6 +120,8 @@
   font-size: 18px;
    line-height: 30px;
    font-weight: 400;
+   position: relative;
+   padding-left: 70px;
 }
 
 .block-form__emotions-text,
@@ -82,6 +131,15 @@
   line-height: 30px;
   font-weight: 400;
 }
+
+.block-form__emotions-text {
+  resize: none;
+  width: 280px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  min-height: 200px;
+}
+
 
 .block-form__submit {
  display: block;
@@ -97,6 +155,21 @@
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    margin: 0 auto;
+}
+
+.block-form__submit:hover,
+.block-form__submit:focus {
+   background-color: #1c9b5e;
+}
+
+.block-form__submit:active {
+ color: rgba(255, 255, 255, 0.3);
+  background-color: #1c9b5e;
+}
+
+.block-form__submit:disabled {
+  background: #e5e5e5;
 }
 
 .block-form__annotation {
@@ -104,8 +177,91 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  width: 185px;
+  margin: 36px auto 0;
+  padding: 0;
 }
 
 .block-form__star {
   color: @red;
 }
+
+
+.block-form__progress-label::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  background: #ffffff;
+  left: 0;
+  top: -7px;
+  border: 2px solid #e5e5e5;
+  cursor: pointer;
+}
+
+
+.block-form__progress-input:checked + .block-form__progress-checbox::before {
+  content: "";
+   position: absolute;
+   width: 10px;
+   height: 2px;
+   transform: rotate(45deg);
+   background: @red;
+   left: 8px;
+   top: 16px;
+}
+
+.block-form__progress-input:checked + .block-form__progress-checbox::after {
+  content: "";
+   position: absolute;
+   width: 22px;
+   height: 2px;
+   transform: rotate(-45deg);
+   background: @red;
+    left: 13px;
+   top: 13px;
+}
+
+.block-form__progress-label:hover::before,
+.block-form__progress-label:focus::before {
+  border: 2px solid @darkblue;
+}
+
+.block-form__progress-label:active::before {
+  border: 2px solid @red;
+}
+
+
+.block-form__application-label::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  background: #ffffff;
+  left: 0;
+  top: -7px;
+  border: 2px solid #e5e5e5;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.block-form__application-input:checked + .block-form__application-radio::before {
+  content: "";
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background: @red;
+   left: 12px;
+   top: 6px;
+}
+
+.block-form__application-label:hover::before,
+.block-form__application-label:focus::before {
+  border: 2px solid @darkblue;
+}
+
+.block-form__application-label:active::before {
+  border: 2px solid @red;
+}
+
