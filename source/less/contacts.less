@@ -29,15 +29,27 @@ padding: 44px 37px 0 43px;
    padding: 0;
 }
 
-.contacts__item p {
+.contacts__phone,
+.contacts__mail,
+.contacts__adress {
   color: @red;
   font-size: 24px;
    font-weight: 300;
-   margin: 0;
-   padding: 0 0 20px 0;
+   margin: 0 0 20px 0;
+   padding: 0;
+   cursor: pointer;
 }
 
-.ontacts__adress {
+.contacts__mail:hover {
+ color: @darkblue;
+ text-decoration: underline;
+}
+
+.contacts__mail:active {
+  opacity: 0.3;
+}
+
+.contacts__adress {
   margin-bottom: 35px;
 }
 

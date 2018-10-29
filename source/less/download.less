@@ -3,6 +3,10 @@
   padding: 28px 20px;
 }
 
+.download__title {
+ display: none;
+}
+
 .download__button {
   display: block;
   width: 280px;
@@ -31,7 +35,7 @@
 
 
 .download__list {
-   .list-default();
+   .list-default;
    width: 206px;
    margin: 0 auto;
    display: flex;
@@ -69,4 +73,36 @@
    line-height: 24px;
    font-weight: 300;
    text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+ .download {
+   background-image: url("../img/bkg-tablet-header.jpg");
+   background-repeat: no-repeat;
+    min-height: 729px;
+    margin-top: -110px;
+    padding: 208px 20px 0;
+ }
+  .download__title {
+    display: block;
+    color: #ffffff;
+    font-size: 40px;
+   line-height: 48px;
+   font-weight: 300;
+   width: 190px;
+   text-align: center;
+    margin: 0 0 27px 58px;
+  }
+  .download__button {
+    width: 300px;
+    margin: 0;
+  }
+  .download__list {
+    margin: 45px 0 38px 45px;
+  }
+  .download__text {
+    width: 300px;
+    font-size: 18px;
+    margin: 0;
+  }
 }

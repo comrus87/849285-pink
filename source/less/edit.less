@@ -23,28 +23,53 @@ padding: 0;
   padding: 20px 20px 34px 20px;
 }
 
-.button {
+.edit__button {
     display: block;
     width: 280px;
     padding: 14px 88px 17px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
+     background-color: @gray;
     text-align: center;
     outline: none;
-    background-color: @gray;
     border-radius: 30px;
     cursor: pointer;
 }
 
-.edit__buuton-submit {
- color: @red;
- border: 3px solid @red;
+.edit__buttons {
+  padding: 0 20px 40px 20px;
 }
 
-.edit__buuton-reset {
+.edit__button--submit {
+ color: @red;
+ border: 3px solid @red;
+  margin-bottom: 12px;
+  &:hover,
+  &:focus {
+     color: #ffffff;
+     background-color: @red;
+  }
+    &:active {
+     color: rgba(255, 255, 255, 0.3);
+     background-color: @red;
+  }
+}
+
+
+.edit__button--reset {
  color: rgba(40, 54, 69, 0.1);
  border: 3px solid rgba(40, 54, 69, 0.1);
+   &:hover,
+  &:focus {
+   color: rgba(40, 54, 69, 0.3);
+ border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+    &:active {
+     color: rgba(255, 255, 255, 0.3);
+     background-color: #b5b9be;
+     border: 3px solid #b5b9be;
+  }
 }
 
 .edit__filters {
@@ -127,10 +152,5 @@ padding: 0;
   margin-bottom: 38px;
 }
 
-.edit__buttons {
-  padding: 0 20px 40px 20px;
-}
 
-.edit__buuton-submit {
-  margin-bottom: 12px;
-}
+

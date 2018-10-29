@@ -21,15 +21,6 @@
  width: 300%;
 }
 
-.tariff__cols {
-  padding: 0;
-  margin: 0;
-}
-
-
-.tariff__list-header {
-  background: @darkblue;
-}
 
 .tariff__name {
   display: block;
@@ -54,6 +45,7 @@
    font-weight: 400;
    border: 2px solid #e5e5e5;
    width: 260px;
+    margin: 0;
    padding: 14px 17px 14px 22px;
 }
 
@@ -102,6 +94,7 @@ display: block;
    padding: 14px 0;
    border-right: 2px solid #e5e5e5;
    position: relative;
+   background: @darkblue;
 }
 
 .tariff__flag-hit {
@@ -176,4 +169,42 @@ background-color: rgba(40, 54, 69, 0.1);
     border: 3px solid #000000;
    box-sizing: content-box;
    background: #ffffff;
+}
+
+
+@media (min-width: @tablet-width){
+  .tariff {
+    .wrap-tablet;
+  }
+
+  .tariff__list {
+ width: 620px;
+}
+.tariff__controls {
+ display: none;
+ }
+
+.tariff__option--mobile {
+  display: none;
+}
+
+.tariff__cols--hidden {
+  display: block;
+}
+
+.tariff__first-cols {
+  display: block;
+ }
+
+.tariff__cols {
+  width: 155px;
+  padding: 0;
+}
+
+ .tariff__button--1:checked ~ .tariff__list,
+ .tariff__button--2:checked ~ .tariff__list,
+ .tariff__button--3:checked ~ .tariff__list {
+  transform: none;
+}
+
 }
