@@ -3,7 +3,7 @@
  .wrap-mobile;
    background-image: url("../img/bg-triangle-white.svg");
    background-repeat: no-repeat;
-   background-size: 120%;
+   background-size: 100%;
    padding: 90px 0 100px 0;
    position: relative;
     overflow: hidden;
@@ -115,6 +115,7 @@ display: block;
   font-size: 14px;
    line-height: 30px;
    font-weight: 600;
+   text-transform: uppercase;
  transform: rotate(-45deg) translateX(-12px);
 
 }
@@ -175,6 +176,7 @@ background-color: rgba(40, 54, 69, 0.1);
 @media (min-width: @tablet-width){
   .tariff {
     .wrap-tablet;
+    padding: 88px 0 68px 0;
   }
 
   .tariff__list {
@@ -189,22 +191,39 @@ background-color: rgba(40, 54, 69, 0.1);
 }
 
 .tariff__cols--hidden {
-  display: block;
+  display: table-cell;
 }
 
 .tariff__first-cols {
-  display: block;
+  display: table-cell;
  }
 
 .tariff__cols {
   width: 155px;
-  padding: 0;
+  padding: 7px 0 8px 15px;
 }
 
  .tariff__button--1:checked ~ .tariff__list,
  .tariff__button--2:checked ~ .tariff__list,
  .tariff__button--3:checked ~ .tariff__list {
   transform: none;
+}
+
+.tariff__cols-wrap {
+ justify-content: center;
+}
+
+.tariff__item-header {
+  padding: 9px 0;
+}
+
+.tariff__flag-hit {
+ background-image: url("../img/bg-hit-tablet.svg");
+ background-size: 85%;
+}
+
+.tariff__flag-hit span {
+ transform: rotate(-45deg) translateX(-14px) translateY(-7px);
 }
 
 }

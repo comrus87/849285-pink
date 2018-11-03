@@ -1,7 +1,5 @@
 .edit {
-   width: 320px;
- margin: 0 auto;
-padding: 0;
+.wrap-mobile;
 }
 
 .edit__title {
@@ -19,14 +17,16 @@ padding: 0;
   background: @gray;
 }
 
-.edit__wrap {
-  padding: 20px 20px 34px 20px;
+.edit__picture {
+  display: block;
+  padding: 20px 20px 0;
 }
+
 
 .edit__button {
     display: block;
     width: 280px;
-    padding: 14px 88px 17px;
+    padding: 16px 0 15px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -72,13 +72,20 @@ padding: 0;
   }
 }
 
-.edit__filters {
+.edit__list {
+  .list-default;
  width: 200px;
  display: flex;
+ flex-wrap: wrap;
  justify-content: space-between;
  align-items: center;
- margin: 42px auto 0;
+ margin: 35px auto 30px;
 }
+
+.edit__item .edit__range-filter {
+  display: none;
+}
+
 
 .edit__filter-toggle {
   display: block;
@@ -152,5 +159,108 @@ padding: 0;
   margin-bottom: 38px;
 }
 
+@media (min-width: @tablet-width) {
+.edit {
+.wrap-tablet;
+}
+
+.edit__title {
+  font-size: 18px;
+  width: 425px;
+   margin: 67px auto;
+}
 
 
+.edit__range{
+ display: none;
+}
+
+.edit__item .edit__range-filter {
+  display: block;
+}
+
+.send-form {
+  padding: 57px 20px 47px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit__picture {
+  padding: 0;
+}
+
+.edit__list {
+ width: 275px;
+ margin: 0;
+}
+
+.edit__item {
+ width: 275px;
+ display: flex;
+ align-items: center;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #dddfe0;
+  margin-bottom: 25px;
+}
+
+.edit__item:first-child {
+  margin-top: 9px;
+
+}
+
+.edit__item:last-child {
+  margin-bottom: 0;
+}
+
+.edit__filter-toggle--crop {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: 0 30px 0 3px;
+}
+
+.edit__icon--crop {
+  width: 22px;
+  height: 22px;
+}
+
+.edit__filter-toggle--fill {
+  width: 24px;
+  height: 22px;
+  margin: 0 28px 0 3px;
+}
+
+.edit__icon--fill {
+  width: 24px;
+  height: 22px;
+}
+
+.edit__filter-toggle--contrast {
+   width: 16px;
+  height: 16px;
+  margin: 0 31px 0 8px;
+}
+
+.edit__icon--contrast {
+  width: 16px;
+  height: 16px;
+}
+
+.edit__range-filter {
+ width: 202px;
+ margin: 0;
+}
+
+.edit__button {
+  width: 260px;
+}
+
+.edit__buttons {
+  padding: 0;
+  margin-top: 66px;
+}
+.edit__button--submit {
+  margin-bottom: 24px;
+}
+
+}
