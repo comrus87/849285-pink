@@ -12,11 +12,19 @@
    text-align: center;
 }
 
+.block-form__text-tablet {
+  display: none;
+}
+
 .block-form__list {
   .list-default();
 }
 
-.block-form fieldset {
+.block-form__name,
+.block-form__progress,
+.block-form__contacts,
+.block-form__application,
+.block-form__emotions {
   border: none;
   margin: 0;
 }
@@ -35,8 +43,8 @@
    padding-left: 43px;
 }
 
-.block-form__name-item input,
-.block-form__contacts-item input {
+.block-form__name-input,
+.block-form__contacts-input {
     color: @darkblue;
   font-size: 18px;
    line-height: 30px;
@@ -57,8 +65,8 @@
      }
 }
 
-.block-form__name-item input::placeholder,
-.block-form__contacts-item input::placeholder {
+.block-form__name-input::placeholder,
+.block-form__contacts-input::placeholder {
  color: @darkblue;
 }
 
@@ -95,7 +103,8 @@
 
 .block-form__progress-title,
 .block-form__application-title,
-.block-form__emotions-title {
+.block-form__emotions-title,
+.block-form__contacts-title {
   color: @red;
   font-size: 14px;
    line-height: 18px;
@@ -104,6 +113,19 @@
    margin: 0 auto;
    padding: 0;
 }
+
+.block-form__contacts-title {
+  display: none;
+}
+
+
+.block-form__application-title--tablet,
+.block-form__emotions-title--tablet,
+.block-form__progress-title--tablet {
+  display: none;
+}
+
+
 
 .block-form__progress-title {
   width: 220px;
@@ -144,6 +166,7 @@
   width: 280px;
   border: 2px solid #e5e5e5;
   border-radius: 3px;
+  padding: 20px;
   min-height: 200px;
       &:hover {
     border: 2px solid @darkblue;
@@ -191,7 +214,8 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  width: 185px;
+  text-transform: uppercase;
+  width: 183px;
   margin: 36px auto 0;
   padding: 0;
 }
@@ -267,7 +291,7 @@
    border-radius: 50%;
    background: @red;
    left: 12px;
-   top: 6px;
+   top: 5px;
 }
 
 .block-form__application-label:hover::before,
@@ -284,6 +308,202 @@
 @media (min-width: @tablet-width) {
  .block-form {
 .wrap-tablet;
+padding: 0 20px;
+display: flex;
+flex-wrap: wrap;
  }
+
+.block-form__text {
+   font-size: 18px;
+    width: 500px;
+   margin: 82px auto 83px;
+}
+
+.block-form__text-tablet {
+  display: block;
+}
+
+.block-form__name-label {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.block-form__name-text {
+  display: block;
+  margin-right: 20px;
+}
+
+.block-form__name-input {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.block-form__name-item {
+  margin-bottom: 52px;
+}
+
+.block-form__name {
+  width: 620px;
+}
+
+
+.block-form__progress {
+  width: 620px;
+  position: relative;
+  order: 3;
+  background: #ffffff;
+   border: 2px solid #e5e5e5;
+  padding: 54px 0 54px 58px;
+    margin-bottom: 52px;
+}
+
+.block-form__contacts {
+  width: 620px;
+  position: relative;
+  order: 2;
+   border: 2px solid #e5e5e5;
+   padding: 45px 58px 25px;
+    margin-bottom: 52px;
+}
+
+.block-form__application {
+  width: 620px;
+  position: relative;
+  order: 1;
+  background: #ffffff;
+  padding: 54px 0 54px 58px;
+  border: 2px solid #e5e5e5;
+  margin-bottom: 52px;
+}
+
+.block-form__emotions {
+  width: 620px;
+  position: relative;
+  order: 4;
+   border: 2px solid #e5e5e5;
+   padding: 52px 58px;
+}
+
+.block-form__submit {
+   position: relative;
+  order: 5;
+}
+
+.block-form__annotation {
+   position: relative;
+  order: 6;
+}
+
+.block-form__application-title--tablet,
+.block-form__emotions-title--tablet,
+.block-form__progress-title--tablet,
+.block-form__contacts-title {
+  display: table;
+  color: @red;
+  font-size: 14px;
+   line-height: 18px;
+   font-weight: 400;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.block-form__application-title--tablet {
+  padding: 0 25px;
+}
+
+.block-form__emotions-title--tablet {
+  padding: 0 38px;
+}
+
+.block-form__progress-title--tablet,
+.block-form__contacts-title {
+  padding: 0 32px;
+}
+
+.block-form__progress-title,
+.block-form__application-title,
+.block-form__emotions-title {
+  display: none;
+}
+
+.block-form__application-item {
+ margin: 0 0 35px 0;
+}
+
+.block-form__application-item:last-child {
+  margin: 0;
+}
+
+.block-form__contacts-label {
+  padding: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.block-form__contacts-input {
+  display: block;
+  width: 100%;
+}
+
+.block-form__contacts-label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #e5e5e5;
+  top: 2px;
+  right: 2px;
+}
+
+.block-form__contacts-label--phone {
+  margin-bottom: 30px;
+}
+
+.block-form__contacts-label--phone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 19px;
+  background-image: url("../img/icon-phone.svg");
+  top: 22px;
+  right: 22px;
+}
+
+.block-form__contacts-label--mail::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 13px;
+  background-image: url("../img/icon-mail.svg");
+  top: 25px;
+  right: 23px;
+}
+
+.block-form__contacts-text {
+  margin: 10px 0 0 20px;
+}
+
+.block-form__progress-item {
+  margin-top: 44px;
+}
+
+.block-form__emotions-text {
+  width: 500px;
+  min-height: 193px;
+}
+
+.block-form__submit {
+  margin: 67px 157px 46px 0;
+}
+
+.block-form__annotation {
+  margin: 85px 0 0 0;
+}
 
 }

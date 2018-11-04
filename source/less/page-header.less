@@ -6,6 +6,12 @@
  flex-direction: column;
 }
 
+.page-header__promo {
+   background-image: url("../img/bkg-mobile-header.jpg");
+   background-repeat: no-repeat;
+    min-height: 461px;
+    margin-top: -66px;
+}
 
 .page-header__title {
   color: #ffffff;
@@ -44,6 +50,10 @@
   .wrap-tablet;
 }
 
+.page-header__promo {
+  display: none;
+}
+
 .page-header__intro {
    background: url("../img/bg-back-tablet@1x.jpg");
    background-position: 50% 0;
@@ -66,5 +76,18 @@
   width: 490px;
   padding: 0;
 }
+
+}
+
+
+@media (min-width: @desktop-width) {
+    .page-header {
+  .wrap-desktop;
+}
+
+.page-header__promo {
+  display: none;
+}
+
 
 }
