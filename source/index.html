@@ -73,6 +73,13 @@
   <symbol id="bg-triangle-white-footer" viewBox="0 0 595.28 61.905">
     <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
   </symbol>
+  <symbol id="icon-review-arrow-left" viewBox="0 0 21.706 41.719">
+    <path fill="#bec2c7" d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+  </symbol>
+  <symbol id="icon-review-arrow-right" viewBox="0 0 21.706 41.719">
+      <path fill="#bec2c7" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+  </symbol>
+
 </svg>
 
 
@@ -151,7 +158,7 @@
         <section class="science">
           <div class="science__wrap">
           <h2 class="science__title"> Эффект <br>на 24 часа! </h2>
-          <p class="science__text"> Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки! </p>
+          <p class="science__text"> Британские ученые провели исследования и доказали, <br class="science__desktop-br"> что положительный эффект <br class="science__tablet-br"> от использования приложения длится целые сутки! </p>
           <a class="science__link"> Узнать больше об исследовании </a>
           </div>
         </section>
@@ -167,6 +174,11 @@
                    <label for="review-btn-2" class="review__label--2"></label>
                    <label for="review-btn-3" class="review__label--3"></label>
                 </div>
+
+            <button class="reviews__toggle-left"> <svg class="reviews__toggle-icon" width="22" height="41"> <use xlink:href="#icon-review-arrow-left"></use></svg> </button>
+             <button class="reviews__toggle-right"> <svg class="reviews__toggle-icon" width="22" height="41"> <use xlink:href="#icon-review-arrow-right"></use></svg> </button>
+
+
                 <ul class="review__list">
                     <li class="review__item review__item--1">
                         <h3 class="review__title"> Николай Петров </h3>
@@ -293,15 +305,15 @@
             <div class="contacts__wrap">
                 <h2 class="contacts__title"> Остались вопросы? Свяжитесь с нами!</h2>
                 <ul class="contacts__list">
-                    <li class="contacts__item">
+                    <li class="contacts__item contacts__item--phone">
                         <h3 class="contacts__text"> Звоните </h3>
                         <p class="contacts__phone"> +7 (812) 555-66-66 </p>
                     </li>
-                    <li class="contacts__item">
+                    <li class="contacts__item contacts__item--mail">
                         <h3 class="contacts__text"> Пишите </h3>
                         <p class="contacts__mail"> mail@htmlacademy.ru </p>
                     </li>
-                    <li class="contacts__item">
+                    <li class="contacts__item contacts__item--adress">
                         <h3 class="contacts__text"> Приезжайте в гости </h3>
                         <p class="contacts__adress"> ул. Большая Конюшенная, 19/8 </p>
                     </li>

@@ -101,7 +101,7 @@ display: block;
   width: 70px;
   height: 70px;
   top: 0;
-  left: -2px;
+  left: 0px;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,6 +184,7 @@ background-color: rgba(40, 54, 69, 0.1);
   .tariff__list {
  width: 620px;
 }
+
 .tariff__controls {
  display: none;
  }
@@ -226,6 +227,31 @@ background-color: rgba(40, 54, 69, 0.1);
 
 .tariff__flag-hit span {
  transform: rotate(-45deg) translateX(-14px) translateY(-7px);
+}
+
+}
+
+
+@media (min-width: @desktop-width){
+    .tariff {
+    padding: 150px 10px 95px;
+  }
+
+  .tariff__wrap {
+  .wrap-desktop;
+}
+
+  .tariff__list {
+ width: 940px;
+}
+
+.tariff__cols {
+  font-size: 18px;
+   padding: 15px 24px 15px;
+}
+
+.tariff__item-header {
+   padding: 18px 0;
 }
 
 }

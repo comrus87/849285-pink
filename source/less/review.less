@@ -84,9 +84,16 @@ background-color: rgba(40, 54, 69, 0.1);
    background: #ffffff;
 }
 
+.reviews__toggle-left,
+.reviews__toggle-right {
+  display: none;
+}
+
+
 @media (min-width: @tablet-width){
   .review {
  .wrap-tablet;
+ padding: 100px 20px 70px;
   }
 
   .review__title {
@@ -120,4 +127,50 @@ background-color: rgba(40, 54, 69, 0.1);
   left: 300px;
   bottom: 22px;
 }
+}
+
+
+@media (min-width: @desktop-width){
+  .review {
+ .wrap-desktop;
+ padding: 190px 135px 40px;
+   &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 79px;
+   height: 63px;
+   background-image: url("../img/icon-quotes.svg");
+   top: 72px;
+   left: 443px;
+   }
+  }
+
+
+  .review__title-about {
+    font-size: 18px;
+}
+
+
+.review__controls {
+  display: none;
+}
+
+.reviews__toggle-left,
+.reviews__toggle-right {
+  display: block;
+  position: absolute;
+  border: none;
+  background: transparent;
+   top: 213px;
+}
+
+.reviews__toggle-left {
+  left: 10px;
+}
+
+.reviews__toggle-right {
+  right: 10px;
+}
+
 }
