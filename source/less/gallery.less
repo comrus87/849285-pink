@@ -1,6 +1,3 @@
-.gallery {
-.wrap-mobile;
-}
 
 .gallery__text {
   width: 244px;
@@ -15,6 +12,7 @@ color: @darkblue;
 }
 
 .gallery__bottom-wrap {
+  .wrap-mobile;
  padding: 0 20px;
 }
 
@@ -28,6 +26,11 @@ color: @darkblue;
   line-height: 0;
 }
 
+
+.gallery__panorama-image {
+  width: 100%;
+  height: auto;
+}
 
 .gallery__panorama-flag {
   display: block;
@@ -117,9 +120,10 @@ color: @darkblue;
 
 
 @media (min-width: @tablet-width) {
-.gallery {
-.wrap-tablet;
-  }
+.gallery__bottom-wrap {
+  .wrap-tablet;
+}
+
 .gallery__text {
   margin: 95px auto 75px;
   font-size: 18px;

@@ -1,17 +1,16 @@
 .tariff {
   background: @gray;
- .wrap-mobile;
    background-image: url("../img/bg-triangle-white.svg");
    background-repeat: no-repeat;
    background-size: 100%;
    padding: 90px 0 100px 0;
-   position: relative;
     overflow: hidden;
 }
 
 .tariff__wrap {
+  .wrap-mobile;
   padding: 0 20px;
-  overflow-x: hidden;
+  position: relative;
 }
 
 .tariff__list {
@@ -146,7 +145,7 @@ background-color: rgba(40, 54, 69, 0.1);
   justify-content: space-between;
   align-items: center;
   left: 129px;
-  bottom: 42px;
+  bottom: -55px;
 }
 
 .tariff__button--1:checked ~ .tariff__list {
@@ -175,9 +174,12 @@ background-color: rgba(40, 54, 69, 0.1);
 
 @media (min-width: @tablet-width){
   .tariff {
-    .wrap-tablet;
     padding: 88px 0 68px 0;
   }
+
+  .tariff__wrap {
+  .wrap-tablet;
+}
 
   .tariff__list {
  width: 620px;

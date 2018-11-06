@@ -1,6 +1,3 @@
-.block-form {
-.wrap-mobile;
-}
 
 .block-form__text {
   color: @darkblue;
@@ -30,6 +27,7 @@
 }
 
 .block-form__name {
+  .wrap-mobile;
   padding: 0;
 }
 
@@ -73,19 +71,28 @@
 
 .block-form__progress {
   background: @gray;
-  padding: 39px 20px 42px 20px;
+    padding: 39px 20px 42px 20px;
 }
 
+
 .block-form__contacts {
+  .wrap-mobile;
   padding: 32px 20px 0 20px;
 }
 
 .block-form__application {
   background: @gray;
-  padding: 39px 20px 42px 20px;
+    padding: 39px 20px 42px 20px;
+}
+
+.block-form__list--application,
+.block-form__list--progress {
+  max-width: 280px;
+  margin: 0 auto
 }
 
 .block-form__emotions {
+  .wrap-mobile;
   padding: 38px 20px 48px 20px;
 }
 
@@ -307,7 +314,6 @@
 
 @media (min-width: @tablet-width) {
  .block-form {
-.wrap-tablet;
 padding: 0 20px;
 display: flex;
 flex-wrap: wrap;
@@ -346,10 +352,13 @@ flex-wrap: wrap;
 
 .block-form__name {
   width: 620px;
+   .wrap-tablet;
 }
 
 
+
 .block-form__progress {
+  .wrap-tablet;
   width: 620px;
   position: relative;
   order: 3;
@@ -359,7 +368,9 @@ flex-wrap: wrap;
     margin-bottom: 52px;
 }
 
+
 .block-form__contacts {
+  .wrap-tablet;
   width: 620px;
   position: relative;
   order: 2;
@@ -369,6 +380,7 @@ flex-wrap: wrap;
 }
 
 .block-form__application {
+  .wrap-tablet;
   width: 620px;
   position: relative;
   order: 1;
@@ -378,7 +390,15 @@ flex-wrap: wrap;
   margin-bottom: 52px;
 }
 
+.block-form__list--application,
+.block-form__list--progress {
+  .wrap-tablet;
+
+}
+
+
 .block-form__emotions {
+  .wrap-tablet;
   width: 620px;
   position: relative;
   order: 4;
@@ -386,15 +406,13 @@ flex-wrap: wrap;
    padding: 52px 58px;
 }
 
-.block-form__submit {
-   position: relative;
+.block-form__button-wrap {
+  position: relative;
   order: 5;
+  display: flex;
+  .wrap-tablet;
 }
 
-.block-form__annotation {
-   position: relative;
-  order: 6;
-}
 
 .block-form__application-title--tablet,
 .block-form__emotions-title--tablet,

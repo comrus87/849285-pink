@@ -1,5 +1,9 @@
-.edit {
-.wrap-mobile;
+.edit__content {
+background: @gray;
+}
+
+.edit__send-form {
+  .wrap-mobile;
 }
 
 .edit__title {
@@ -13,9 +17,6 @@
    text-align: center;
 }
 
-.edit__content {
-  background: @gray;
-}
 
 .edit__picture {
   display: block;
@@ -160,8 +161,11 @@
 }
 
 @media (min-width: @tablet-width) {
-.edit {
+.edit__send-form {
 .wrap-tablet;
+padding: 57px 20px 47px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .edit__title {
@@ -170,19 +174,12 @@
    margin: 67px auto;
 }
 
-
 .edit__range{
  display: none;
 }
 
 .edit__item .edit__range-filter {
   display: block;
-}
-
-.send-form {
-  padding: 57px 20px 47px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .edit__picture {

@@ -70,30 +70,35 @@
     </g>
   </g>
   </symbol>
+  <symbol id="bg-triangle-white-footer" viewBox="0 0 595.28 61.905">
+    <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
+  </symbol>
 </svg>
 
 
 
     <header class="page-header">
-        <div class="page-header__wrap">
               <h1 class="visually-hidden"> Pink - приложение для раскрашивания будний в серый цвет.</h1>
             <nav class="main-nav main-nav--closed main-nav--nojs">
               <div class="main-nav__menu">
+                <div class="main-nav__wrap">
                <a class="main-nav__logo-link"> <svg class="main-nav__logo" width="75" height="24"> <use xlink:href="#logo-pink-white-mobile"></use></svg>
                 <svg class="main-nav__logo-tablet" width="150" height="42"> <use xlink:href="#logo-pink-white-tablet"></use></svg>
                 <svg class="main-nav__logo-desktop" width="150" height="42"> <use xlink:href="#logo-pink-white-desktop"></use></svg>
                </a>
-              </div>
                 <button class="main-nav__button" type="button"> </button>
+
+              </div>
                     <ul class="main-nav__list">
                         <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
                         <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
                         <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
                         <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
                     </ul>
+                  </div>
             </nav>
             <div class="page-header__promo"> </div>
-        </div>
+
         <div class="download">
             <h2 class="visually-hidden"> Скачать приложение </h2>
             <div class="download__wrap">
@@ -122,10 +127,10 @@
     </header>
     <main class="page-main">
         <section class="advantages">
-            <div class="advantages__wrap">
                 <h2 class="advantages__title"> Устали от серости мегаполиса?
                   <span class="advantages__subtitle"> Нам есть, что вам предложить! </span>
                 </h2>
+              <div class="advantages__wrap">
                 <ul class="advantages__list">
                     <li class="advantages__item">
                         <h3 class="advantages__header advantages__header--mood"> Поднимает настроение </h3>
@@ -144,10 +149,11 @@
         </section>
 
         <section class="science">
+          <div class="science__wrap">
           <h2 class="science__title"> Эффект <br>на 24 часа! </h2>
           <p class="science__text"> Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки! </p>
           <a class="science__link"> Узнать больше об исследовании </a>
-
+          </div>
         </section>
 
         <section class="review">
@@ -190,7 +196,7 @@
         </section>
         <section class="tariff">
             <h2 class="visually-hidden"> Тарифы </h2>
-            <div class="tariff__wrap">
+           <div class="tariff__wrap">
                <input class="visually-hidden tariff__button--1" type="radio" id="tariff-btn-1" name="toggled">
                <input class="visually-hidden tariff__button--2" type="radio" id="tariff-btn-2" name="toggled" checked>
                <input class="visually-hidden tariff__button--3" type="radio" id="tariff-btn-3" name="toggled">
@@ -302,7 +308,7 @@
                 </ul>
             </div>
             <div class="contacts__google-map">
-              <div class="contacts__decoration"></div>
+                <svg class="contacts__decoration-svg" width="595.28px" height="61.905px"> <use xlink:href="#bg-triangle-white-footer"></use></svg>
            </div>
         </section>
     </main>

@@ -72,26 +72,27 @@
 </svg>
 
     <header class="page-header">
-        <div class="page-header__wrap">
             <h1 class="visually-hidden"> Pink - приложение для раскрашивания будний в серый цвет.</h1>
             <nav class="main-nav main-nav--open main-nav--nojs">
               <div class="main-nav__menu">
+                 <div class="main-nav__wrap">
               <a class="main-nav__logo-link" href="index.html"> <svg class="main-nav__logo" width="75" height="24"> <use xlink:href="#logo-pink-white-mobile"></use></svg>
                 <svg class="main-nav__logo-tablet" width="150" height="42"> <use xlink:href="#logo-pink-white-tablet"></use></svg>
                 <svg class="main-nav__logo-desktop" width="150" height="42"> <use xlink:href="#logo-pink-white-desktop"></use></svg>
                </a>
+               <button class="main-nav__button" type="button"> </button>
               </div>
-                    <button class="main-nav__button" type="button"> </button>
+
                     <ul class="main-nav__list">
                         <li class="main-nav__item"><a href="index.html">Главная</a></li>
                         <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
                         <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
                         <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
                     </ul>
+                  </div>
               </nav>
                 <div class="page-header__intro">
                   <h2 class="page-header__title-form"> Конкурс на самое безбашенное путешествие с Пинк </h2>
-              </div>
         </div>
     </header>
     <main class="page-main">
@@ -117,9 +118,10 @@
                 </ul>
             </fieldset>
             <fieldset class="block-form__progress">
+
                 <legend class="block-form__progress-title--tablet"> Ваши безбашенные достижения в путешествии </legend>
                  <p class="block-form__progress-title"> Ваши безбашенные достижения в путешествии </p>
-                <ul class="block-form__list">
+                <ul class="block-form__list block-form__list--progress">
                     <li class="block-form__progress-item">
                         <label class="block-form__progress-label"> Сделал селфи с акулой
                             <input type="checkbox" class="visually-hidden block-form__progress-input" name="selfi" checked> <span class="block-form__progress-checbox"> </span>
@@ -153,6 +155,7 @@
                         </label>
                     </li>
                 </ul>
+
             </fieldset>
             <fieldset class="block-form__contacts">
                 <legend class="block-form__contacts-title"> Контактная информация </legend>
@@ -173,7 +176,7 @@
             <fieldset class="block-form__application">
                 <legend class="block-form__application-title--tablet"> С каким приложением путешествовали? </legend>
                  <p class="block-form__application-title"> С каким приложением путешествовали? </p>
-                <ul class="block-form__list">
+                <ul class="block-form__list block-form__list--application">
                     <li class="block-form__application-item">
                         <label class="block-form__application-label"> Pink для IOS
                             <input type="radio" class="visually-hidden block-form__application-input" name="application" value="ios" checked>  <span class="block-form__application-radio"> </span>
@@ -196,8 +199,10 @@
                  <p class="block-form__emotions-title"> Опишите свои эмоции </p>
                 <textarea class="block-form__emotions-text" name="textletter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
+          <div class="block-form__button-wrap">
             <button type="submit" class="block-form__submit"> Отправить форму </button>
             <p class="block-form__annotation"> <span class="block-form__star"> * </span> — обязательные поля </p>
+          </div>
         </form>
     </main>
     <footer class="page-footer">

@@ -86,31 +86,32 @@
 </svg>
 
     <header class="page-header">
-        <div class="page-header__wrap">
             <h1 class="visually-hidden"> Pink - приложение для раскрашивания будний в серый цвет.</h1>
             <nav class="main-nav main-nav--open main-nav--nojs">
                 <div class="main-nav__menu">
+                  <div class="main-nav__wrap">
                  <a class="main-nav__logo-link" href="index.html"> <svg class="main-nav__logo" width="75" height="24"> <use xlink:href="#logo-pink-white-mobile"></use></svg>
                 <svg class="main-nav__logo-tablet" width="150" height="42"> <use xlink:href="#logo-pink-white-tablet"></use></svg>
                 <svg class="main-nav__logo-desktop" width="150" height="42"> <use xlink:href="#logo-pink-white-desktop"></use></svg>
                </a>
-                </div>
                     <button class="main-nav__button" type="button"> </button>
+                  </div>
+
                     <ul class="main-nav__list">
                         <li class="main-nav__item"><a href="index.html">Главная</a></li>
                         <li class="main-nav__item main-nav__item--active"><a>Фотография</a></li>
                         <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
                         <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
                     </ul>
+                  </div>
             </nav>
             <div class="page-header__intro">
                 <h2 class="page-header__title"> Фотографии пользователей </h2>
             </div>
-        </div>
     </header>
     <main class="page-main">
         <section class="gallery">
-            <div class="gallery__top-wrap">
+
                 <p class="gallery__text"> Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших? </p>
                 <a href="#" class="gallery__link-panorama">
                   <span class="gallery__panorama-flag"> Панорама дня </span>
@@ -120,7 +121,7 @@
                     <img class="gallery__panorama-image" src="img/panorama-mobile@1x.jpg" alt="Панорама">
                    </picture>
                  </a>
-            </div>
+
             <div class="gallery__bottom-wrap">
                 <div class="gallery__comment">
                     <h3 class="gallery__comment-name"> Анна <span class="gallery__comment-time"> (5 минут назад) </span> </h3>
@@ -235,7 +236,7 @@
         <section class="edit">
             <h2 class="edit__title"> Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне! </h2>
             <div class="edit__content">
-                <form action="https://echo.htmlacademy.ru" class="send-form" method="post">
+                <form action="https://echo.htmlacademy.ru" class="edit__send-form" method="post">
                     <picture class="edit__picture">
                       <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
                       <img src="img/photo-road-mobile@1x.jpg" alt="Загружаемое фото">

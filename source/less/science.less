@@ -5,10 +5,12 @@
 @media (min-width: @tablet-width){
   .science {
   display: block;
-  .wrap-tablet;
-  padding: 98px 0 26px 330px;
-  position: relative;
+}
 
+.science__wrap {
+.wrap-tablet;
+padding: 98px 0 26px 330px;
+position: relative;
 }
 
 .science__title {
@@ -65,6 +67,22 @@
    font-weight: 400;
    text-decoration: underline;
    cursor: pointer;
+}
+
+}
+
+@media (min-width: @desktop-width){
+ .science {
+  background-color: @gray;
+}
+
+.science__title {
+  line-height: 30px;
+    width: 320px;
+}
+
+.science__title br {
+  display: none;
 }
 
 }

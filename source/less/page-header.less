@@ -1,14 +1,16 @@
 .page-header {
- .wrap-mobile;
  color: #ffffff;
  background-color: @darkblue;
  display: flex;
  flex-direction: column;
 }
 
+
 .page-header__promo {
    background-image: url("../img/bkg-mobile-header.jpg");
    background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: cover;
     min-height: 461px;
     margin-top: -66px;
 }
@@ -27,6 +29,8 @@
 .page-header__intro {
    background: url("../img/bg-back-mobile@1x.jpg");
    background-repeat: no-repeat;
+   background-position: 50% 0;
+   background-size: cover;
     min-height: 237px;
     margin-top: -66px;
 }
@@ -46,9 +50,6 @@
 
 
 @media (min-width: @tablet-width) {
-  .page-header {
-  .wrap-tablet;
-}
 
 .page-header__promo {
   display: none;
@@ -56,7 +57,6 @@
 
 .page-header__intro {
    background: url("../img/bg-back-tablet@1x.jpg");
-   background-position: 50% 0;
    min-height: 440px;
   margin-top: -110px;
    padding: 187px 0 0 0;
@@ -66,7 +66,6 @@
    font-size: 50px;
   line-height: 60px;
   width: 360px;
-  text-align: center;
   padding: 0;
 }
 
@@ -81,13 +80,6 @@
 
 
 @media (min-width: @desktop-width) {
-    .page-header {
-  .wrap-desktop;
-}
-
-.page-header__promo {
-  display: none;
-}
 
 
 }
