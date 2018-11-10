@@ -1,5 +1,4 @@
 
-
 .advantages__wrap {
  background-color: @gray;
  background-image: url("../img/bg-triangle-white.svg");
@@ -10,20 +9,23 @@
 .advantages__list {
   .list-default();
   .wrap-mobile;
-   padding: 82px 30px 317px
+   padding: 78px 30px 285px
 }
 
 .advantages__title {
   color: @darkblue;
   font-size: 24px;
+  line-height: 30px;
    font-weight: 300;
    text-align: center;
-   padding-top: 40px;
+   padding-top: 39px;
+   padding-bottom: 34px;
+   margin: 0;
 }
 
 .advantages__subtitle {
   display: block;
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .advantages__header {
@@ -33,6 +35,7 @@
    font-weight: 700;
    text-align: center;
    position: relative;
+   margin: 0;
 }
 
 .advantages__description {
@@ -41,6 +44,7 @@
    line-height: 24px;
    font-weight: 400;
    text-align: center;
+   margin: 10px 0 34px 0;
 }
 
 
@@ -48,7 +52,7 @@
   &::before {
    content: "";
   position: absolute;
-  top: 167px;
+  top: 146px;
   left: 55px;
   width: 157px;
   height: 277px;
@@ -57,13 +61,17 @@
    }
 }
 
+.advantages__description br {
+  display: none;
+}
+
 
 @media (min-width: @tablet-width) {
  .advantages__title {
   font-size: 40px;
    line-height: 48px;
    padding: 0;
-   margin: 52px 0 42px 0;
+   margin: 48px 0 46px 0;
  }
 
  .advantages__subtitle {
@@ -72,6 +80,9 @@
   margin: 0 auto;
  }
 
+ .advantages__description br {
+  display: block;
+}
 
  .advantages__list {
   .wrap-tablet;
@@ -113,8 +124,13 @@
 .advantages__title {
   font-size: 50px;
    line-height: 60px;
-   margin: 72px 0;
+   margin: 66px 0 80px;
  }
+
+.advantages__description br {
+  display: none;
+}
+
 
  .advantages__subtitle {
   width: 425px;
@@ -132,7 +148,7 @@
    line-height: 30px;
    font-weight: 700;
    text-align: center;
-   margin: 0 auto 20px;
+   margin: 0 auto 22px;
    position: relative;
 }
 
@@ -148,7 +164,7 @@
   height: 302px;
   background-image: url("../img/iphone-screen-1-desktop@1x.png");
   top: -358px;
-  left: -50px;
+  left: -54px;
 }
 
 .advantages__header--world::before {
@@ -159,7 +175,7 @@
   height: 302px;
   background-image: url("../img/iphone-screen-2-desktop@1x.png");
   top: -358px;
-  left: -40px;
+  left: -43px;
 }
 
 
@@ -171,7 +187,7 @@
   height: 302px;
   background-image: url("../img/iphone-screen-3-desktop@1x.png");
   top: -358px;
-  left: -35px;
+  left: -31px;
 }
 
 
