@@ -16,9 +16,7 @@
   border-radius: 50%;
 }
 
-.social__link--youtube {
-  padding-left: 7px;
-}
+
 
 .social__link:hover,
 .social__link:focus {
@@ -32,6 +30,20 @@
 
 @media (min-width: @tablet-width) {
   .social {
-    margin: 0;
+    margin: 4px 20px 0 0;
   }
+
+}
+
+
+@media (min-width: @desktop-width) {
+  .social {
+    margin: 4px 0 0 8px;
+  }
+
+  .social__link--twitter {
+   padding-top: 15px;
+
+  }
+
 }
