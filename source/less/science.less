@@ -1,139 +1,118 @@
 .science {
-  display: none;
+    display: none;
 }
 
-@media (min-width: @tablet-width){
-  .science {
-  display: block;
+@media (min-width: @tablet-width) {
+    .science {
+        display: block;
+    }
+    .science__wrap {
+        .wrap-tablet;
+        padding: 98px 0 26px 330px;
+        position: relative;
+    }
+    .science__desktop-br {
+        display: none;
+    }
+    .science__title {
+        margin: 0 0 8px 0;
+        color: #000000;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+        width: 168px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            width: 238px;
+            height: 276px;
+            background-image: url("../img/icon-timer.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        &::after {
+            content: "24";
+            position: absolute;
+            color: @red;
+            font-size: 96px;
+            text-align: center;
+            padding-top: 65px;
+            width: 202px;
+            height: 202px;
+            border: 13px solid @red;
+            border-radius: 50%;
+            top: 115px;
+            left: 38px;
+        }
+    }
+    .science__text {
+        color: @darkblue;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        margin: 0 0 12px 0;
+        width: 296px;
+    }
+    .science__link {
+        display: block;
+        color: @red;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 
-.science__wrap {
-.wrap-tablet;
-padding: 98px 0 26px 330px;
-position: relative;
-}
-
-.science__desktop-br {
-display: none;
-}
-
-
-.science__title {
-  margin: 0 0 8px 0;
-  color: #000000;
-  font-size: 30px;
-   line-height: 36px;
-   font-weight: 700;
-   width: 168px;
-
-  &::before {
-   content: "";
-  position: absolute;
-  top: 60px;
-  left: 20px;
-  width: 238px;
-  height: 276px;
-  background-image: url("../img/icon-timer.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-   }
-
-  &::after {
-   content: "24";
-  position: absolute;
-   color: @red;
-   font-size: 96px;
-   text-align: center;
-   padding-top: 65px;
-  width: 202px;
-  height: 202px;
-   border: 13px solid @red;
-   border-radius: 50%;
-   top: 115px;
-   left: 38px;
- }
-
-}
-
-.science__text {
-  color: @darkblue;
-  font-size: 14px;
-   line-height: 24px;
-   font-weight: 400;
-   margin: 0 0 12px 0;
-   width: 296px;
-}
-
-.science__link {
-  display: block;
-  color: @red;
-  font-size: 14px;
-   line-height: 24px;
-   font-weight: 400;
-   text-decoration: underline;
-   cursor: pointer;
-}
-
-
-}
-
-@media (min-width: @desktop-width){
- .science {
-  background-color: @gray;
-}
-
-.science__wrap {
-.wrap-desktop;
-padding: 160px 0 110px 377px;
-}
-
-.science__title {
-  line-height: 30px;
-    width: 320px;
-    margin-bottom: 24px;
-}
-
-.science__title br {
-  display: none;
-}
-
-.science__tablet-br {
-display: none;
-}
-
-.science__desktop-br {
-  display: block;
-}
-
-.science__text {
-   font-size: 18px;
-   line-height: 30px;
-   width: 530px;
-   margin: 0 0 31px 0;
-}
-
-.science__link {
-   font-size: 18px;
-   line-height: 30px;
-}
-
-.science__title {
-  &::before {
-  top: 66px;
-  left: 10px;
-  width: 300px;
-  height: 348px;
-   }
-
-  &::after {
-   font-size: 120px;
-   padding-top: 88px;
-  width: 252px;
-  height: 252px;
-   border: 16px solid @red;
-   top: 136px;
-   left: 33px;
- }
-}
-
+@media (min-width: @desktop-width) {
+    .science {
+        background-color: @gray;
+    }
+    .science__wrap {
+        .wrap-desktop;
+        padding: 160px 0 110px 377px;
+    }
+    .science__title {
+        line-height: 30px;
+        width: 320px;
+        margin-bottom: 24px;
+    }
+    .science__title br {
+        display: none;
+    }
+    .science__tablet-br {
+        display: none;
+    }
+    .science__desktop-br {
+        display: block;
+    }
+    .science__text {
+        font-size: 18px;
+        line-height: 30px;
+        width: 530px;
+        margin: 0 0 31px 0;
+    }
+    .science__link {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .science__title {
+        &::before {
+            top: 66px;
+            left: 10px;
+            width: 300px;
+            height: 348px;
+        }
+        &::after {
+            font-size: 120px;
+            padding-top: 88px;
+            width: 252px;
+            height: 252px;
+            border: 16px solid @red;
+            top: 136px;
+            left: 33px;
+        }
+    }
 }
