@@ -6,6 +6,7 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+     <script src="js/picturefill.js"></script>
 </head>
 
 <body>
@@ -144,9 +145,9 @@
                 <a href="#" class="gallery__link-panorama">
                   <span class="gallery__panorama-flag"> Панорама дня </span>
                   <picture class="gallery__panorama">
-                    <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-                    <img class="gallery__panorama-image" src="img/panorama-mobile@1x.jpg" alt="Панорама">
+                    <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
+                    <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+                    <img class="gallery__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="Панорама">
                    </picture>
                  </a>
 
@@ -161,9 +162,9 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                           <picture>
-                            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
-                            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                            <img src="img/photo-car-mobile@1x.jpg" alt="Фото Левон">
+                            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg">
+                            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
+                            <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" alt="Фото Левон">
                           </picture>
                           </a>
                        <div class="gallery__comment">
@@ -179,9 +180,9 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                           <picture>
-                            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                            <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото Антон">
+                            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+                            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
+                            <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" alt="Фото Антон">
                           </picture>
                           </a>
                          <div class="gallery__comment">
@@ -197,9 +198,9 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                           <picture>
-                            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
-                            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                            <img src="img/photo-window-mobile@1x.jpg" alt="Фото Борис">
+                            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
+                            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
+                            <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" alt="Фото Борис">
                           </picture>
                           </a>
                        <div class="gallery__comment">
@@ -215,9 +216,9 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                           <picture>
-                            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
-                            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                            <img src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергей">
+                            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
+                            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
+                            <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" alt="Фото Сергей">
                           </picture>
                           </a>
                        <div class="gallery__comment">
@@ -232,9 +233,9 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                            <picture>
-                            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
-                            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                            <img src="img/photo-pov-mobile@1x.jpg" alt="Фото Максим">
+                            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg">
+                            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
+                            <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" alt="Фото Максим">
                           </picture>
                           </a>
                        <div class="gallery__comment">
@@ -250,9 +251,9 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                           <picture>
-                            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
-                            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                            <img src="img/photo-wing-mobile@1x.jpg" alt="Фото Надежда">
+                            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
+                            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
+                            <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" alt="Фото Надежда">
                           </picture>
                           </a>
                        <div class="gallery__comment">

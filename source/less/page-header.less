@@ -7,13 +7,39 @@
 
 
 .page-header__promo {
-   background-image: url("../img/bkg-mobile-header.jpg");
-   background-repeat: no-repeat;
-   background-position: 50% 50%;
+   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
    background-size: cover;
     min-height: 461px;
     margin-top: -66px;
+     @media (min-resolution: @retina-dpi),
+            (min-resolution: @retina-dppx) {
+   background: url("../img/bg-back-mobile@2x.jpg") no-repeat center;
+   background-size: auto 456px;
+    }
 }
+
+
+.page-header__promo-wrap {
+  position: relative;
+  .wrap-mobile;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 256px;
+    height: 286px;
+    top: 175px;
+    left: 0;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+       @media (min-resolution: @retina-dpi),
+            (min-resolution: @retina-dppx) {
+   background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+   background-size: 256px auto;
+    }
+  }
+}
+
+
 
 .page-header__title {
   color: #ffffff;
@@ -33,6 +59,11 @@
    background-size: cover;
     min-height: 236px;
     margin-top: -66px;
+     @media (min-resolution: @retina-dpi),
+            (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: auto 462px;
+    }
 }
 
 
@@ -57,9 +88,15 @@
 
 .page-header__intro {
    background: url("../img/bg-back-tablet@1x.jpg");
+   background-position: 50% 0;
    min-height: 438px;
   margin-top: -110px;
    padding: 178px 0 0 0;
+   @media (min-resolution: @retina-dpi),
+            (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
 }
 
 .page-header__title {
@@ -86,6 +123,11 @@
     margin-top: -110px;
     background-position: 50% 0;
    padding: 173px 0 0 0;
+    @media (min-resolution: @retina-dpi),
+            (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
 }
 
 .page-header__title-form {
