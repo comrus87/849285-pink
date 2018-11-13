@@ -6,6 +6,9 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/min.style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <script src="js/picturefill.js"></script>
 </head>
 
@@ -38,7 +41,7 @@
                     <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
                     <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
                     <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-                    <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+                    <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
                 </ul>
             </div>
         </nav>
@@ -109,22 +112,24 @@
         <section class="review">
             <h2 class="visually-hidden"> Отзывы </h2>
             <div class="review__wrap">
-                <input class="visually-hidden review__button--1" id="review-btn-1" type="radio" name="review-switch" checked="">
-                <input class="visually-hidden review__button--2" id="review-btn-2" type="radio" name="review-switch">
-                <input class="visually-hidden review__button--3" id="review-btn-3" type="radio" name="review-switch">
+                <input class="visually-hidden review__button-1" id="review-btn-1" type="radio" name="review-switch" checked="">
+                <input class="visually-hidden review__button-2" id="review-btn-2" type="radio" name="review-switch">
+                <input class="visually-hidden review__button-3" id="review-btn-3" type="radio" name="review-switch">
                 <div class="review__controls">
-                    <label for="review-btn-1" class="review__label--1"> </label>
-                    <label for="review-btn-2" class="review__label--2"></label>
-                    <label for="review-btn-3" class="review__label--3"></label>
+                    <label for="review-btn-1" class="review__label-1"> </label>
+                    <label for="review-btn-2" class="review__label-2"></label>
+                    <label for="review-btn-3" class="review__label-3"></label>
                 </div>
 
-                <button class="reviews__toggle-left">
-                    <svg class="reviews__toggle-icon" width="22" height="41">
+                <button class="review__toggle-left">
+                    <span class="visually-hidden">Назад</span>
+                    <svg class="review__toogle-icon" width="22" height="41">
                         <use xlink:href="#icon-review-arrow-left"></use>
                     </svg>
                 </button>
-                <button class="reviews__toggle-right">
-                    <svg class="reviews__toggle-icon" width="22" height="41">
+                <button class="review__toggle-right">
+                    <span class="visually-hidden">Вперед</span>
+                    <svg class="review__toogle-icon" width="22" height="41">
                         <use xlink:href="#icon-review-arrow-right"></use>
                     </svg>
                 </button>
@@ -158,13 +163,13 @@
         <section class="tariff">
             <h2 class="visually-hidden"> Тарифы </h2>
             <div class="tariff__wrap">
-                <input class="visually-hidden tariff__button--1" type="radio" id="tariff-btn-1" name="toggled">
-                <input class="visually-hidden tariff__button--2" type="radio" id="tariff-btn-2" name="toggled" checked="">
-                <input class="visually-hidden tariff__button--3" type="radio" id="tariff-btn-3" name="toggled">
+                <input class="visually-hidden tariff__button-1" type="radio" id="tariff-btn-1" name="toggled">
+                <input class="visually-hidden tariff__button-2" type="radio" id="tariff-btn-2" name="toggled" checked="">
+                <input class="visually-hidden tariff__button-3" type="radio" id="tariff-btn-3" name="toggled">
                 <div class="tariff__controls">
-                    <label for="tariff-btn-1" class="tariff__label--1"></label>
-                    <label for="tariff-btn-2" class="tariff__label--2"></label>
-                    <label for="tariff-btn-3" class="tariff__label--3"></label>
+                    <label for="tariff-btn-1" class="tariff__label-1"></label>
+                    <label for="tariff-btn-2" class="tariff__label-2"></label>
+                    <label for="tariff-btn-3" class="tariff__label-3"></label>
                 </div>
                 <table class="tariff__list">
                     <tbody>
@@ -186,20 +191,20 @@
                             </td>
                             <td class="tariff__cols">
                                 <div class="tariff__cols-wrap">
-                                    <span class="tariff__option--mobile"> Розовый фильтр </span>
-                                    <span class="tariff__icon--ok"> </span>
+                                    <span class="tariff__option-mobile"> Розовый фильтр </span>
+                                    <span class="tariff__icon-ok"> </span>
                                 </div>
                             </td>
                             <td class="tariff__cols">
                                 <div class="tariff__cols-wrap">
-                                    <span class="tariff__option--mobile"> Розовый фильтр </span>
-                                    <span class="tariff__icon--ok"> </span>
+                                    <span class="tariff__option-mobile"> Розовый фильтр </span>
+                                    <span class="tariff__icon-ok"> </span>
                                 </div>
                             </td>
                             <td class="tariff__cols">
                                 <div class="tariff__cols-wrap">
-                                    <span class="tariff__option--mobile"> Розовый фильтр </span>
-                                    <span class="tariff__icon--ok"> </span>
+                                    <span class="tariff__option-mobile"> Розовый фильтр </span>
+                                    <span class="tariff__icon-ok"> </span>
                                 </div>
                             </td>
                         </tr>
@@ -208,20 +213,20 @@
                             </td>
                             <td class="tariff__cols">
                                 <div class="tariff__cols-wrap">
-                                    <span class="tariff__option--mobile"> Смайлики </span>
-                                    <span class="tariff__icon--cancel"> </span>
+                                    <span class="tariff__option-mobile"> Смайлики </span>
+                                    <span class="tariff__icon-cancel"> </span>
                                 </div>
                             </td>
                             <td class="tariff__cols">
                                 <div class="tariff__cols-wrap">
-                                    <span class="tariff__option--mobile"> Смайлики </span>
-                                    <span class="tariff__icon--ok"> </span>
+                                    <span class="tariff__option-mobile"> Смайлики </span>
+                                    <span class="tariff__icon-ok"> </span>
                                 </div>
                             </td>
                             <td class="tariff__cols">
                                 <div class="tariff__cols-wrap">
-                                    <span class="tariff__option--mobile"> Смайлики </span>
-                                    <span class="tariff__icon--ok"> </span>
+                                    <span class="tariff__option-mobile"> Смайлики </span>
+                                    <span class="tariff__icon-ok"> </span>
                                 </div>
                             </td>
                         </tr>
@@ -230,20 +235,20 @@
                             </td>
                             <td class="tariff__cols">
                                 <div class="tariff__cols-wrap">
-                                    <span class="tariff__option--mobile"> Комментарии  </span>
-                                    <span class="tariff__icon--cancel"> </span>
+                                    <span class="tariff__option-mobile"> Комментарии  </span>
+                                    <span class="tariff__icon-cancel"> </span>
                                 </div>
                             </td>
                             <td class="tariff__cols">
                                 <div class="tariff__cols-wrap">
-                                    <span class="tariff__option--mobile"> Комментарии  </span>
-                                    <span class="tariff__icon--cancel"> </span>
+                                    <span class="tariff__option-mobile"> Комментарии  </span>
+                                    <span class="tariff__icon-cancel"> </span>
                                 </div>
                             </td>
                             <td class="tariff__cols">
                                 <div class="tariff__cols-wrap">
-                                    <span class="tariff__option--mobile"> Комментарии  </span>
-                                    <span class="tariff__icon--ok"> </span>
+                                    <span class="tariff__option-mobile"> Комментарии  </span>
+                                    <span class="tariff__icon-ok"> </span>
                                 </div>
                             </td>
                         </tr>
@@ -302,7 +307,7 @@
             <svg class="page-footer__logo" width="150" height="40">
                 <use xlink:href="#logo-pink-blue-mobile"></use>
             </svg>
-            <svg class="page-footer__logo--desktop" width="150" height="40">
+            <svg class="page-footer__logo-desktop" width="150" height="40">
                 <use xlink:href="#logo-pink-blue-desktop"></use>
             </svg>
         </a>

@@ -6,6 +6,9 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/min.style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <script src="js/picturefill.js"></script>
 </head>
 
@@ -38,7 +41,7 @@
                     <li class="main-nav__item"><a href="index.html">Главная</a></li>
                     <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
                     <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-                    <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+                    <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
                 </ul>
             </div>
         </nav>
@@ -53,6 +56,10 @@
             <a href="#" class="gallery__link-panorama">
                 <span class="gallery__panorama-flag"> Панорама дня </span>
                 <picture class="gallery__panorama">
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+
                     <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
                     <img class="gallery__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="Панорама">
@@ -60,7 +67,7 @@
             </a>
 
             <div class="gallery__bottom-wrap">
-                <div class="gallery__comment">
+                <div class="gallery__comment gallery__comment--panorama">
                     <h3 class="gallery__comment-name"> Анна <span class="gallery__comment-time"> (5 минут назад) </span> </h3>
                     <p class="gallery__comment-content"> Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы! </p>
                     <button class="gallery__button-like gallery__button-like--panorama" type="button" title="Мне нравится"></button>
@@ -70,6 +77,10 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                             <picture>
+                                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+
                                 <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                                 <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" alt="Фото Левон">
@@ -88,6 +99,10 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                             <picture>
+                                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                                <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+
                                 <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                                 <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" alt="Фото Антон">
@@ -106,6 +121,10 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                             <picture>
+                               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                               <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+
                                 <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                                 <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" alt="Фото Борис">
@@ -124,6 +143,10 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                             <picture>
+                                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+
                                 <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                                 <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" alt="Фото Сергей">
@@ -141,6 +164,10 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                             <picture>
+                                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+
                                 <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                                 <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" alt="Фото Максим">
@@ -159,6 +186,10 @@
                     <li class="gallery__item">
                         <a class="gallery__link-item" href="#">
                             <picture>
+                                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+
                                 <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                                 <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" alt="Фото Надежда">
@@ -181,6 +212,10 @@
             <div class="edit__content">
                 <form action="https://echo.htmlacademy.ru" class="edit__send-form" method="post">
                     <picture class="edit__picture">
+                        <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
                         <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                         <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
                         <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" alt="Загружаемое фото">
@@ -188,6 +223,7 @@
                     <div class="edit__wrap">
                         <ul class="edit__list">
                             <li class="edit__item">
+                               <span class="visually-hidden">Обрезать фотографию</span>
                                 <label class="edit__filter-toggle edit__filter-toggle--crop">
                                     <input type="radio" name="edit-filter" class="visually-hidden edit__filter-btn1" checked="">
                                     <svg class="edit__icon edit__icon--crop" width="48" height="44">
@@ -197,6 +233,7 @@
                                 <input class="edit__range-filter" type="range" name="range-filter">
                             </li>
                             <li class="edit__item">
+                               <span class="visually-hidden">Редактор заливки</span>
                                 <label class="edit__filter-toggle edit__filter-toggle--fill">
                                     <input type="radio" name="edit-filter" class="visually-hidden edit__filter-btn2">
                                     <svg class="edit__icon edit__icon--fill" width="48" height="45">
@@ -206,6 +243,7 @@
                                 <input class="edit__range-filter" type="range" name="range-filter">
                             </li>
                             <li class="edit__item">
+                               <span class="visually-hidden">Изменить контрастность</span>
                                 <label class="edit__filter-toggle edit__filter-toggle--contrast">
                                     <input type="radio" name="edit-filter" class="visually-hidden edit__filter-btn1">
                                     <svg class="edit__icon edit__icon--contrast" width="32" height="32">
@@ -234,7 +272,7 @@
             <svg class="page-footer__logo" width="150" height="40">
                 <use xlink:href="#logo-pink-blue-mobile"></use>
             </svg>
-            <svg class="page-footer__logo--desktop" width="150" height="40">
+            <svg class="page-footer__logo-desktop" width="150" height="40">
                 <use xlink:href="#logo-pink-blue-desktop"></use>
             </svg>
         </a>

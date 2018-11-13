@@ -136,9 +136,9 @@
     display: none;
 }
 
-.block-form__application-title--tablet,
-.block-form__emotions-title--tablet,
-.block-form__progress-title--tablet {
+.block-form__application-title-tablet,
+.block-form__emotions-title-tablet,
+.block-form__progress-title-tablet {
     display: none;
 }
 
@@ -240,8 +240,8 @@
     color: @red;
 }
 
-.block-form__progress-label::before {
-    content: "";
+.block-form__progress-checbox {
+   display: block;
     position: absolute;
     width: 39px;
     height: 39px;
@@ -259,8 +259,8 @@
     height: 2px;
     transform: rotate(45deg);
     background: @red;
-    left: 8px;
-    top: 16px;
+    left: 6px;
+    top: 20px;
 }
 
 .block-form__progress-input:checked + .block-form__progress-checbox::after {
@@ -270,21 +270,22 @@
     height: 2px;
     transform: rotate(-45deg);
     background: @red;
-    left: 13px;
-    top: 13px;
+    left: 11px;
+    top: 15px;
 }
 
-.block-form__progress-label:hover::before,
-.block-form__progress-label:focus::before {
+.block-form__progress-checbox:hover,
+.block-form__progress-input:focus + .block-form__progress-checbox {
     border: 2px solid @darkblue;
 }
 
-.block-form__progress-label:active::before {
+
+.block-form__progress-checbox:active {
     border: 2px solid @red;
 }
 
-.block-form__application-label::before {
-    content: "";
+.block-form__application-radio {
+    display: block;
     position: absolute;
     width: 39px;
     height: 39px;
@@ -303,20 +304,20 @@
     height: 15px;
     border-radius: 50%;
     background: @red;
-    left: 12px;
-    top: 5px;
+    left: 10px;
+    top: 10px;
 }
 
-.block-form__application-label:hover::before,
-.block-form__application-label:focus::before {
+.block-form__application-radio:hover,
+.block-form__application-input:focus + .block-form__application-radio {
     border: 2px solid @darkblue;
 }
 
-.block-form__application-label:active::before {
+.block-form__application-radio:active {
     border: 2px solid @red;
 }
 
-.block-form__annotation--desktop {
+.block-form__annotation-desktop {
     display: none;
 }
 
@@ -502,9 +503,9 @@
         width: 620px;
         .wrap-tablet;
     }
-    .block-form__application-title--tablet,
-    .block-form__emotions-title--tablet,
-    .block-form__progress-title--tablet,
+    .block-form__application-title-tablet,
+    .block-form__emotions-title-tablet,
+    .block-form__progress-title-tablet,
     .block-form__contacts-title {
         display: table;
         color: @red;
@@ -514,13 +515,13 @@
         text-transform: uppercase;
         text-align: center;
     }
-    .block-form__application-title--tablet {
+    .block-form__application-title-tablet {
         padding: 0 25px;
     }
-    .block-form__emotions-title--tablet {
+    .block-form__emotions-title-tablet {
         padding: 0 38px;
     }
-    .block-form__progress-title--tablet,
+    .block-form__progress-title-tablet,
     .block-form__contacts-title {
         padding: 0 32px;
     }
@@ -774,7 +775,7 @@
         width: 320px;
         margin: 0 -5px 0 0;
     }
-    .block-form__annotation--desktop {
+    .block-form__annotation-desktop {
         display: inline;
     }
     .block-form__modal-send {
