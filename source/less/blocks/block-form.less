@@ -231,7 +231,7 @@
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase;
-    width: 183px;
+    width: 190px;
     margin: 36px auto 0;
     padding: 0;
 }
@@ -241,7 +241,7 @@
 }
 
 .block-form__progress-checbox {
-   display: block;
+    display: block;
     position: absolute;
     width: 39px;
     height: 39px;
@@ -278,7 +278,6 @@
 .block-form__progress-input:focus + .block-form__progress-checbox {
     border: 2px solid @darkblue;
 }
-
 
 .block-form__progress-checbox:active {
     border: 2px solid @red;
@@ -584,6 +583,9 @@
     .block-form__contacts-text {
         margin: 10px 0 0 20px;
     }
+    .block-form__contacts-input {
+        height: 63px;
+    }
     .block-form__progress-item {
         margin-top: 52px;
     }
@@ -596,7 +598,8 @@
         margin: 67px 0 51px 0;
     }
     .block-form__annotation {
-        margin: 85px 0 0 0;
+        width: 190px;
+        margin: 85px -10px 0 0;
     }
     .block-form__modal-send,
     .block-form__error {
@@ -710,10 +713,13 @@
     .block-form__list--contacts {
         display: flex;
         width: 820px;
-        justify-content: space-between;
     }
     .block-form__contacts-item {
         width: 375px;
+        margin-left: 70px;
+    }
+    .block-form__contacts-item:first-child {
+        margin-left: 0;
     }
     .block-form__contacts-label--phone {
         margin: 0;
@@ -733,11 +739,11 @@
     }
     .block-form__progress-item:nth-child(1) {
         order: 1;
-        width: 260px;
+        width: 265px;
     }
     .block-form__progress-item:nth-child(2) {
         order: 4;
-        width: 260px;
+        width: 265px;
     }
     .block-form__progress-item:nth-child(3) {
         order: 2;
@@ -772,8 +778,8 @@
         width: 298px;
     }
     .block-form__annotation {
-        width: 320px;
-        margin: 0 -5px 0 0;
+        width: 325px;
+        margin: 0 -10px 0 0;
     }
     .block-form__annotation-desktop {
         display: inline;
