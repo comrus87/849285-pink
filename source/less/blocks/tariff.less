@@ -179,86 +179,105 @@
   .tariff__wrap {
     .wrap-tablet;
   }
+
   .tariff__list {
     width: 620px;
   }
+
   .tariff__controls {
     display: none;
   }
+
   .tariff__name {
     font-size: 16px;
   }
+
   .tariff__cost {
     font-size: 18px;
   }
+
   .tariff__option-mobile {
     display: none;
   }
+
   .tariff__cols--hidden {
+    padding: 5px 0 9px 15px;
     display: table-cell;
   }
+
   .tariff__first-cols {
     display: table-cell;
   }
+
   .tariff__cols {
     width: 155px;
     padding: 7px 0 10px 0;
     text-transform: none;
   }
-  .tariff__cols--hidden {
-    padding: 5px 0 9px 15px;
-  }
+
   .tariff__button-1:checked ~ .tariff__list,
   .tariff__button-2:checked ~ .tariff__list,
   .tariff__button-3:checked ~ .tariff__list {
     transform: none;
   }
+
   .tariff__cols-wrap {
     justify-content: center;
   }
+
   .tariff__item-header {
     padding: 10px 0 8px;
   }
+
   .tariff__flag-hit {
     background-image: url("../img/bg-hit-tablet.svg");
     background-size: 85%;
   }
+
   .tariff__flag-hit span {
     transform: rotate(-45deg) translateX(-11px) translateY(-8px);
   }
-  }
+}
 
 @media (min-width: @desktop-width) {
-    .tariff {
-        padding: 150px 10px 95px;
-    }
-    .tariff__wrap {
-        .wrap-desktop;
-        padding: 0 10px;
-    }
-    .tariff__list {
-        width: 940px;
-    }
-    .tariff__cols {
-        width: 238px;
-        font-size: 18px;
-        padding: 13px 22px 16px 22px;
-    }
-    .tariff__cost {
-        font-size: 24px;
-    }
-    .tariff__name {
-        font-size: 18px;
-    }
-    .tariff__item-header {
-        padding: 19px 0;
-    }
-    .tariff__flag-hit {
-        width: 90px;
-        height: 90px;
-        background-image: url("../img/hit-ribbon.png");
-    }
-    .tariff__flag-hit span {
-        transform: rotate(-45deg) translateX(-23px) translateY(-5px);
-    }
+  .tariff {
+    padding: 150px 10px 95px;
+  }
+
+  .tariff__wrap {
+    .wrap-desktop;
+    padding: 0 10px;
+  }
+
+  .tariff__list {
+    width: 940px;
+  }
+
+  .tariff__cols {
+    width: 238px;
+    font-size: 18px;
+    padding: 13px 22px 16px 22px;
+  }
+
+  .tariff__cost {
+    font-size: 24px;
+  }
+
+  .tariff__name {
+    font-size: 18px;
+  }
+
+  .tariff__item-header {
+    padding: 19px 0;
+  }
+
+  .tariff__flag-hit {
+    width: 90px;
+    height: 90px;
+    background-image: url("../img/hit-ribbon.png");
+  }
+
+  .tariff__flag-hit span {
+    transform: rotate(-45deg) translateX(-23px) translateY(-5px);
+  }
 }
